@@ -76,6 +76,12 @@
   .lead{color:var(--muted);max-width:660px;margin-top:10px}
   .sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:34px;flex-wrap:wrap}
 
+  /* Credential strip */
+  .credbar{padding:20px 0;border-bottom:1px solid var(--line);background:var(--panel)}
+  .credbar .wrap{display:flex;align-items:baseline;gap:8px 16px;flex-wrap:wrap}
+  .credbar .txt{color:var(--cream);font-size:clamp(16px,2vw,19px);font-family:'Zilla Slab',serif;font-weight:500}
+  .credbar .txt b{color:var(--gold);font-weight:700}
+
   /* Next show banner */
   .nextshow{display:grid;grid-template-columns:260px 1fr;gap:30px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:26px}
   .nextshow .poster{border-radius:8px;border:1px solid var(--line)}
@@ -100,6 +106,7 @@
   .member .body{padding:18px 20px}
   .member h3{font-size:25px;color:var(--cream)}
   .member .role{color:var(--gold);font-family:'Zilla Slab',serif;text-transform:uppercase;letter-spacing:.1em;font-size:13px;font-weight:600;margin-top:4px}
+  .member .bio2{margin-top:10px;color:var(--muted);font-size:13.5px;line-height:1.55}
   .member .ig{display:inline-block;margin-top:12px;font-family:'Zilla Slab',serif;font-weight:600;font-size:15px;letter-spacing:.02em;color:var(--cream);border-bottom:1px solid var(--line)}
   .member .ig:hover{color:var(--gold);border-color:var(--gold)}
   footer .socials{justify-content:center;margin:18px 0 6px}
@@ -254,6 +261,14 @@
   </div>
 </section>
 
+<!-- CREDENTIAL STRIP -->
+<section class="credbar">
+  <div class="wrap">
+    <span class="eyebrow">On stage with</span>
+    <span class="txt">Members have shared stages with <b>The Chicks</b>, <b>Gowan</b>, <b>Dallas Smith</b> and Downchild's <b>Chuck Jackson</b>.</span>
+  </div>
+</section>
+
 <!-- SHOWS -->
 <section id="shows">
   <div class="wrap">
@@ -324,15 +339,15 @@
     <div class="members" style="margin-top:0">
       <div class="member">
         <div class="photo"><img src="assets/allison.jpg" alt="Allison" /></div>
-        <div class="body"><h3>Allison Leroux</h3><div class="role">Fiddle · Vocals</div><a class="ig" href="https://www.instagram.com/allisonlerouxmusic/" target="_blank" rel="noopener">@allisonlerouxmusic</a></div>
+        <div class="body"><h3>Allison Leroux</h3><div class="role">Fiddle · Vocals</div><p class="bio2">Has opened for The Chicks, Gowan and Dallas Smith, and played Boots &amp; Hearts and the Toronto Folk Festival. 2024 Lieutenant Governor's Ontario Heritage Award.</p><a class="ig" href="https://www.instagram.com/allisonlerouxmusic/" target="_blank" rel="noopener">@allisonlerouxmusic</a></div>
       </div>
       <div class="member">
         <div class="photo"><img src="assets/maurie.jpg" alt="Maurie" /></div>
-        <div class="body"><h3>Maurie Swan</h3><div class="role">Guitar · Vocals</div><a class="ig" href="https://www.instagram.com/maurieswan/" target="_blank" rel="noopener">@maurieswan</a></div>
+        <div class="body"><h3>Maurie Swan</h3><div class="role">Guitar · Vocals</div><p class="bio2">Songs and six-string. A regular on the Southside Shuffle and the Port Credit circuit.</p><a class="ig" href="https://www.instagram.com/maurieswan/" target="_blank" rel="noopener">@maurieswan</a></div>
       </div>
       <div class="member">
         <div class="photo"><img src="assets/kevin.jpg" alt="Kevin" /></div>
-        <div class="body"><h3>Kevin McConnell</h3><div class="role">Guitar · Harmonica</div><a class="ig" href="https://www.instagram.com/kevinjmcconnell/" target="_blank" rel="noopener">@kevinjmcconnell</a></div>
+        <div class="body"><h3>Kevin McConnell</h3><div class="role">Guitar · Harmonica</div><p class="bio2">Guitar and harp. A regular on the Southside Shuffle and the Port Credit circuit.</p><a class="ig" href="https://www.instagram.com/kevinjmcconnell/" target="_blank" rel="noopener">@kevinjmcconnell</a></div>
       </div>
     </div>
   </div>
