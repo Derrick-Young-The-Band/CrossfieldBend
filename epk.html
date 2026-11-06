@@ -75,6 +75,16 @@
   .cred li{margin:4px 0}
   .quote{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:18px 20px;color:var(--muted);font-style:italic;margin-top:8px}
 
+  .tech-sum{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px;color:var(--cream);line-height:1.6}
+  .tech-sum b{color:var(--gold);font-family:'Zilla Slab',serif;font-weight:700}
+  .subh{font-family:'Zilla Slab',serif;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--gold);margin:26px 0 10px}
+  table.inp{width:100%;border-collapse:collapse;font-size:14px}
+  table.inp th,table.inp td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+  table.inp th{font-family:'Zilla Slab',serif;text-transform:uppercase;letter-spacing:.07em;font-size:11px;color:var(--gold);font-weight:600}
+  table.inp td{color:var(--cream)}
+  table.inp td:first-child,table.inp th:first-child{width:36px;color:var(--muted)}
+  .stageplot{width:100%;height:auto;background:#1b140d;border:1px solid var(--line);border-radius:10px;margin-top:6px}
+
   .shows .row{display:flex;gap:18px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
   .shows .row:last-child{border-bottom:0}
   .shows .d{font-family:'Zilla Slab',serif;font-weight:700;color:var(--gold);min-width:120px}
@@ -268,6 +278,66 @@
   </div>
 </section>
 
+<!-- TECHNICAL -->
+<section id="tech">
+  <div class="wrap">
+    <div class="eyebrow sec-eyebrow">Technical</div>
+    <h2>Stage plot &amp; input list</h2>
+    <div class="tech-sum" style="margin-top:16px">
+      <b>Self-contained.</b> Crossfield Bend brings its own PA, a Bose L1 Pro Compact with a Bose mixer, plus a smaller system, and mixes itself on stage. For most rooms all we need is <b>two power outlets</b>. For larger rooms we can run a left/right line from our mixer to front of house, or run the room entirely ourselves. We generally play without monitors and rely on stage sound.
+    </div>
+
+    <div class="subh">Input list</div>
+    <table class="inp">
+      <tr><th>#</th><th>Source</th><th>Input</th></tr>
+      <tr><td>1</td><td>Allison</td><td>Fiddle, LR Baggs Anthem pickup (DI)</td></tr>
+      <tr><td>2</td><td>Maurie</td><td>Guitar, LR Baggs Anthem pickup (DI)</td></tr>
+      <tr><td>3</td><td>Kevin</td><td>Guitar, LR Baggs Anthem pickup (DI)</td></tr>
+      <tr><td>4</td><td>Allison</td><td>Vocal, mic (band supplies)</td></tr>
+      <tr><td>5</td><td>Maurie</td><td>Lead vocal, mic (band supplies)</td></tr>
+      <tr><td>6</td><td>Kevin</td><td>Vocal + harmonica, mic (band supplies)</td></tr>
+    </table>
+    <p class="note" style="margin-top:12px">To front of house: a stereo (L/R) line from our Bose mixer, two channels. Occasionally performs as a five-piece (add bass and drums) on request; expanded input list available.</p>
+
+    <div class="subh">Stage plot <span style="color:var(--muted);text-transform:none;letter-spacing:0;font-weight:400;font-family:Spectral,serif">(audience view)</span></div>
+    <svg class="stageplot" viewBox="0 0 820 500" role="img" aria-label="Crossfield Bend stage plot, audience view">
+      <rect x="16" y="16" width="788" height="430" rx="12" fill="#1b140d" stroke="#3a2e1f" stroke-width="1.5"/>
+      <text x="410" y="44" text-anchor="middle" fill="#b2997a" font-family="'Zilla Slab',sans-serif" font-size="13" letter-spacing="4">BACK OF STAGE</text>
+      <rect x="96" y="70" width="14" height="86" rx="4" fill="#2a2217" stroke="#c9a227" stroke-width="1.5"/>
+      <text x="103" y="174" text-anchor="middle" fill="#c9a227" font-family="'Zilla Slab',sans-serif" font-size="11">Bose L1</text>
+      <rect x="710" y="70" width="14" height="86" rx="4" fill="#2a2217" stroke="#c9a227" stroke-width="1.5"/>
+      <text x="717" y="174" text-anchor="middle" fill="#c9a227" font-family="'Zilla Slab',sans-serif" font-size="11">Bose L1</text>
+      <!-- Allison -->
+      <text x="205" y="210" text-anchor="middle" fill="#f1e7d3" font-family="'Zilla Slab',sans-serif" font-size="16" font-weight="700">ALLISON</text>
+      <circle cx="205" cy="252" r="30" fill="#2a2217" stroke="#f1e7d3" stroke-width="2"/>
+      <text x="205" y="307" text-anchor="middle" fill="#b2997a" font-family="Spectral,serif" font-size="12.5">Fiddle · DI</text>
+      <text x="205" y="326" text-anchor="middle" fill="#c9a227" font-family="Spectral,serif" font-size="12.5">Vocal mic</text>
+      <line x1="205" y1="350" x2="205" y2="372" stroke="#f1e7d3" stroke-width="2"/>
+      <circle cx="205" cy="348" r="5" fill="#f1e7d3"/>
+      <!-- Maurie -->
+      <text x="410" y="210" text-anchor="middle" fill="#f1e7d3" font-family="'Zilla Slab',sans-serif" font-size="16" font-weight="700">MAURIE</text>
+      <circle cx="410" cy="252" r="30" fill="#2a2217" stroke="#f1e7d3" stroke-width="2"/>
+      <text x="410" y="307" text-anchor="middle" fill="#b2997a" font-family="Spectral,serif" font-size="12.5">Guitar · DI · stool</text>
+      <text x="410" y="326" text-anchor="middle" fill="#c9a227" font-family="Spectral,serif" font-size="12.5">Lead vocal mic</text>
+      <line x1="410" y1="350" x2="410" y2="372" stroke="#f1e7d3" stroke-width="2"/>
+      <circle cx="410" cy="348" r="5" fill="#f1e7d3"/>
+      <!-- Kevin -->
+      <text x="615" y="210" text-anchor="middle" fill="#f1e7d3" font-family="'Zilla Slab',sans-serif" font-size="16" font-weight="700">KEVIN</text>
+      <circle cx="615" cy="252" r="30" fill="#2a2217" stroke="#f1e7d3" stroke-width="2"/>
+      <text x="615" y="307" text-anchor="middle" fill="#b2997a" font-family="Spectral,serif" font-size="12.5">Guitar · DI</text>
+      <text x="615" y="326" text-anchor="middle" fill="#c9a227" font-family="Spectral,serif" font-size="12.5">Vocal mic + harp</text>
+      <line x1="615" y1="350" x2="615" y2="372" stroke="#f1e7d3" stroke-width="2"/>
+      <circle cx="615" cy="348" r="5" fill="#f1e7d3"/>
+      <!-- Power -->
+      <rect x="86" y="398" width="22" height="22" rx="3" fill="#2a2217" stroke="#b2997a" stroke-width="1.5"/>
+      <text x="116" y="414" fill="#b2997a" font-family="'Zilla Slab',sans-serif" font-size="11">Power</text>
+      <rect x="712" y="398" width="22" height="22" rx="3" fill="#2a2217" stroke="#b2997a" stroke-width="1.5"/>
+      <text x="704" y="414" text-anchor="end" fill="#b2997a" font-family="'Zilla Slab',sans-serif" font-size="11">Power</text>
+      <text x="410" y="482" text-anchor="middle" fill="#f1e7d3" font-family="'Zilla Slab',sans-serif" font-size="15" letter-spacing="6">AUDIENCE</text>
+    </svg>
+  </div>
+</section>
+
 <!-- DOWNLOADS -->
 <section>
   <div class="wrap">
@@ -278,8 +348,9 @@
       <a class="dl" href="assets/logo.png" download><span class="ic">PNG</span><span class="t">Logo<span class="s">Transparent wordmark</span></span></a>
       <a class="dl" href="assets/gallery-01.jpg" download><span class="ic">JPG</span><span class="t">Band photo<span class="s">Full three-piece, live</span></span></a>
       <a class="dl" href="assets/poster.jpg" download><span class="ic">JPG</span><span class="t">Show poster<span class="s">The Ivy Bridge</span></span></a>
+      <a class="dl" href="assets/crossfield-bend-tech-rider.pdf" download><span class="ic">PDF</span><span class="t">Tech rider<span class="s">Stage plot + input list</span></span></a>
     </div>
-    <p class="note" style="margin-top:16px">Stage plot, input list, set lengths and a hospitality rider are available on request.</p>
+    <p class="note" style="margin-top:16px">Set lengths and a hospitality rider are available on request.</p>
   </div>
 </section>
 
