@@ -3,13 +3,16 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Crossfield Bend — Americana roots trio</title>
-<meta name="description" content="Crossfield Bend is a three-piece Americana band: fiddle, guitars, and harmonica. Roots, country, and a little celtic, built to be played in a room full of people." />
+<title>Crossfield Bend | Americana Band in Mississauga &amp; Port Credit</title>
+<meta name="description" content="Crossfield Bend is an Americana roots band in Mississauga and Port Credit: fiddle, guitars, and harmonica. Live music for festivals, bars, and private events." />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Crossfield Bend" />
-<meta property="og:description" content="Americana roots trio. Fiddle, guitars, harmonica. Get bent." />
-<meta property="og:image" content="assets/og.jpg" />
+<meta property="og:description" content="Americana roots band in Mississauga and Port Credit. Fiddle, guitars, harmonica. Get bent." />
+<meta property="og:image" content="https://crossfieldbend.com/assets/og.jpg" />
+<meta property="og:image:width" content="1080" />
+<meta property="og:image:height" content="1350" />
+<meta name="twitter:image" content="https://crossfieldbend.com/assets/og.jpg" />
 <meta property="og:url" content="https://crossfieldbend.com" />
 <meta name="twitter:card" content="summary_large_image" />
 
@@ -121,7 +124,20 @@
   .socials{display:flex;gap:14px;margin-top:14px;flex-wrap:wrap}
   .socials a{font-family:'Zilla Slab',serif;text-transform:uppercase;letter-spacing:.08em;font-weight:600;font-size:14px;border:1px solid var(--line);padding:9px 14px;border-radius:5px;color:var(--cream)}
   .socials a:hover{border-color:var(--gold);color:var(--gold)}
-  .big-email{font-family:'Zilla Slab',serif;font-weight:700;font-size:clamp(22px,3vw,32px);color:var(--gold);word-break:break-all}
+  .big-email{font-family:'Zilla Slab',serif;font-weight:700;font-size:clamp(20px,2.4vw,26px);color:var(--gold);word-break:break-all}
+  .bookform{display:flex;flex-direction:column;gap:12px;margin-top:4px}
+  .bookform .f2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .bookform input,.bookform select,.bookform textarea{background:var(--panel);border:1px solid var(--line);color:var(--cream);padding:12px 14px;border-radius:5px;font-family:'Spectral',serif;font-size:16px;width:100%}
+  .bookform input:focus,.bookform select:focus,.bookform textarea:focus{outline:none;border-color:var(--gold)}
+  .bookform select{color:var(--muted)}
+  .hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+
+  /* Credentials */
+  .creds{display:flex;gap:10px 26px;flex-wrap:wrap;margin-top:26px}
+  .cred{color:var(--cream);font-size:16px}
+  .cred strong{color:var(--gold);font-family:'Zilla Slab',serif;font-weight:700}
+  .played{margin-top:18px;color:var(--muted);font-size:15px;line-height:1.7}
+  .played .pl-label{display:block;font-family:'Zilla Slab',serif;text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:var(--gold);font-weight:600;margin-bottom:4px}
 
   footer{padding:46px 0;text-align:center;color:var(--muted);font-size:14px}
   footer .logo{height:34px;margin:0 auto 14px}
@@ -145,6 +161,66 @@
     .contact-grid{grid-template-columns:1fr;gap:30px}
   }
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Crossfield Bend",
+  "description": "Americana roots band in Mississauga and Port Credit: fiddle, guitars, and harmonica.",
+  "genre": ["Americana", "Roots", "Country", "Folk"],
+  "url": "https://crossfieldbend.com",
+  "image": "https://crossfieldbend.com/assets/og.jpg",
+  "areaServed": ["Mississauga", "Port Credit", "Brampton", "Greater Toronto Area"],
+  "member": [
+    { "@type": "Person", "name": "Allison Leroux" },
+    { "@type": "Person", "name": "Maurie Swan" },
+    { "@type": "Person", "name": "Kevin McConnell" }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/crossfield_bend/",
+    "https://www.facebook.com/crossfield.bend"
+  ]
+}
+</script>
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicEvent",
+    "name": "Crossfield Bend at The Ivy Bridge",
+    "startDate": "2026-11-07T19:00:00-05:00",
+    "endDate": "2026-11-07T23:00:00-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "The Ivy Bridge",
+      "address": { "@type": "PostalAddress", "streetAddress": "160 Main St", "addressLocality": "Brampton", "addressRegion": "ON", "addressCountry": "CA" }
+    },
+    "performer": { "@type": "MusicGroup", "name": "Crossfield Bend" },
+    "url": "https://crossfieldbend.com/#shows",
+    "image": "https://crossfieldbend.com/assets/poster.jpg"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicEvent",
+    "name": "Crossfield Bend: Tuesday Night Music Club",
+    "startDate": "2026-12-01T19:00:00-05:00",
+    "endDate": "2026-12-01T23:00:00-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Roc'n'Doc's",
+      "address": { "@type": "PostalAddress", "streetAddress": "105 Lakeshore Rd E", "addressLocality": "Mississauga", "addressRegion": "ON", "addressCountry": "CA" }
+    },
+    "performer": { "@type": "MusicGroup", "name": "Crossfield Bend" },
+    "url": "https://crossfieldbend.com/#shows",
+    "image": "https://crossfieldbend.com/assets/tuesday-poster-full.jpg"
+  }
+]
+</script>
 </head>
 <body>
 
@@ -183,7 +259,7 @@
   <div class="wrap">
     <div class="sec-head"><h2>Shows</h2><div class="eyebrow">Where to find us</div></div>
 
-    <div class="nextshow">
+    <div class="nextshow" data-until="2026-11-07T23:30:00-05:00">
       <img class="poster" src="assets/poster.jpg" alt="Crossfield Bend at The Ivy Bridge, Nov 7" />
       <div>
         <span class="tonight">Next up</span>
@@ -205,7 +281,7 @@
       </div>
     </div>
 
-    <div class="show">
+    <div class="show" data-until="2026-11-07T23:30:00-05:00">
       <div class="date">Sat · Nov 7</div>
       <div class="where"><div class="v">The Ivy Bridge</div><div class="c">160 Main St, Brampton, ON · 7–11 PM</div></div>
       <a class="btn ghost" href="#contact">Details</a>
@@ -230,6 +306,14 @@
       Prine and Guy Clark, the open-road pull of Springsteen, and the quiet ache of Townes Van Zandt, with
       country and celtic threads running through. No filler, no wasted motion. Just songs built to carry a room.
     </p>
+    <div class="creds">
+      <span class="cred"><strong>2026 Mississauga Arts Awards</strong> · Emerging Artist nominee</span>
+      <span class="cred"><strong>Southside Shuffle</strong> · festival stage</span>
+    </div>
+    <div class="played">
+      <span class="pl-label">Where we have played</span>
+      Roc'n Doc's · Port Credit Legion · Donegal Arms · The Ivy Bridge · ANAF · Soranno's
+    </div>
   </div>
 </section>
 
@@ -240,15 +324,15 @@
     <div class="members" style="margin-top:0">
       <div class="member">
         <div class="photo"><img src="assets/allison.jpg" alt="Allison" /></div>
-        <div class="body"><h3>Allison</h3><div class="role">Fiddle · Vocals</div><a class="ig" href="https://www.instagram.com/allisonlerouxmusic/" target="_blank" rel="noopener">@allisonlerouxmusic</a></div>
+        <div class="body"><h3>Allison Leroux</h3><div class="role">Fiddle · Vocals</div><a class="ig" href="https://www.instagram.com/allisonlerouxmusic/" target="_blank" rel="noopener">@allisonlerouxmusic</a></div>
       </div>
       <div class="member">
         <div class="photo"><img src="assets/maurie.jpg" alt="Maurie" /></div>
-        <div class="body"><h3>Maurie</h3><div class="role">Guitar · Vocals</div><a class="ig" href="https://www.instagram.com/maurieswan/" target="_blank" rel="noopener">@maurieswan</a></div>
+        <div class="body"><h3>Maurie Swan</h3><div class="role">Guitar · Vocals</div><a class="ig" href="https://www.instagram.com/maurieswan/" target="_blank" rel="noopener">@maurieswan</a></div>
       </div>
       <div class="member">
         <div class="photo"><img src="assets/kevin.jpg" alt="Kevin" /></div>
-        <div class="body"><h3>Kevin</h3><div class="role">Guitar · Harmonica</div><a class="ig" href="https://www.instagram.com/kevinjmcconnell/" target="_blank" rel="noopener">@kevinjmcconnell</a></div>
+        <div class="body"><h3>Kevin McConnell</h3><div class="role">Guitar · Harmonica</div><a class="ig" href="https://www.instagram.com/kevinjmcconnell/" target="_blank" rel="noopener">@kevinjmcconnell</a></div>
       </div>
     </div>
   </div>
@@ -268,7 +352,7 @@
         <figcaption>Tuesday Night Music Club at Roc'n'Doc's · from Dec 1</figcaption>
       </figure>
     </div>
-    <p class="lead" style="margin-top:18px">Turn the sound up. Got live clips to feature here? Send a file or a YouTube link.</p>
+    <p class="lead" style="margin-top:18px">Turn the sound up.</p>
   </div>
 </section>
 
@@ -277,11 +361,11 @@
   <div class="wrap">
     <div class="sec-head"><h2>Gallery</h2><div class="eyebrow">On stage and off</div></div>
     <div class="gallery">
-      <img class="wide" src="assets/band-hero.jpg" alt="Crossfield Bend live" />
-      <img src="assets/maurie.jpg" alt="Maurie" />
-      <img src="assets/kevin.jpg" alt="Kevin" />
-      <img src="assets/live.jpg" alt="Live jam" />
-      <img src="assets/allison.jpg" alt="Allison" />
+      <img class="wide" src="assets/band-hero.jpg" alt="Crossfield Bend live on the Queen Bea Stage" />
+      <img src="assets/maurie.jpg" alt="Maurie Swan of Crossfield Bend on guitar" />
+      <img src="assets/kevin.jpg" alt="Kevin McConnell of Crossfield Bend, guitar and harmonica" />
+      <img src="assets/live.jpg" alt="Crossfield Bend live at Roc'n Doc's, Port Credit" />
+      <img src="assets/allison.jpg" alt="Allison Leroux of Crossfield Bend on fiddle" />
     </div>
   </div>
 </section>
@@ -294,7 +378,39 @@
       <div>
         <h3>Book the band</h3>
         <p class="lead">Festivals, bars, house concerts, private events. Tell us the date and the room.</p>
-        <p class="big-email"><a href="mailto:booking@crossfieldbend.com">booking@crossfieldbend.com</a></p>
+        <form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="bookform">
+          <input type="hidden" name="form-name" value="booking" />
+          <p class="hp"><label>Leave this empty: <input name="bot-field" /></label></p>
+          <div class="f2">
+            <input name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="f2">
+            <input type="date" name="date" aria-label="Event date" />
+            <input name="city" placeholder="City" />
+          </div>
+          <input name="venue" placeholder="Venue" />
+          <select name="event_type" aria-label="Type of event">
+            <option value="">Type of event</option>
+            <option>Bar or club</option>
+            <option>Festival</option>
+            <option>Private event</option>
+            <option>House concert</option>
+            <option>Corporate</option>
+            <option>Other</option>
+          </select>
+          <select name="budget" aria-label="Budget range">
+            <option value="">Budget range</option>
+            <option>Under $500</option>
+            <option>$500 to $1000</option>
+            <option>$1000 to $2000</option>
+            <option>$2000+</option>
+            <option>Not sure yet</option>
+          </select>
+          <textarea name="message" rows="3" placeholder="Anything else?"></textarea>
+          <button class="btn" type="submit">Send booking request</button>
+        </form>
+        <p class="lead" style="font-size:14px;margin-top:10px">Or email <a href="mailto:booking@crossfieldbend.com">booking@crossfieldbend.com</a></p>
         <div class="socials">
           <a href="https://www.instagram.com/crossfield_bend/" target="_blank" rel="noopener">Instagram</a>
           <a href="https://www.facebook.com/crossfield.bend" target="_blank" rel="noopener">Facebook</a>
@@ -303,11 +419,12 @@
       <div>
         <h3>Join the list</h3>
         <p class="lead">New songs, new dates. No spam.</p>
-        <form class="mail" action="mailto:booking@crossfieldbend.com" method="post" enctype="text/plain">
+        <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="company" class="mail">
+          <input type="hidden" name="form-name" value="newsletter" />
+          <p class="hp"><label>Leave empty: <input name="company" /></label></p>
           <input type="email" name="email" placeholder="you@email.com" required />
           <button class="btn" type="submit">Sign up</button>
         </form>
-        <p class="lead" style="font-size:14px;margin-top:10px">We can wire this to a real mailing list service when you are ready.</p>
       </div>
     </div>
   </div>
@@ -329,6 +446,12 @@
   document.getElementById('year').textContent = new Date().getFullYear();
   document.querySelectorAll('#nav a').forEach(function(a){
     a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open')});
+  });
+  // Auto-hide shows once they are past, so stale dates never sit at the top.
+  var now = new Date();
+  document.querySelectorAll('[data-until]').forEach(function(el){
+    var t = new Date(el.getAttribute('data-until'));
+    if(!isNaN(t) && t < now){ el.style.display = 'none'; }
   });
 </script>
 </body>
