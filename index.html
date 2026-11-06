@@ -116,6 +116,9 @@
   .vid{margin:0}
   .vid video{width:100%;border-radius:12px;border:1px solid var(--line);background:#000;display:block}
   .vid figcaption{margin-top:10px;color:var(--muted);font-family:'Zilla Slab',serif;font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:13px}
+  .feature-vid{margin:0}
+  .feature-vid video{width:100%;max-height:72vh;border-radius:12px;border:1px solid var(--line);background:#000;display:block}
+  .feature-vid figcaption{margin-top:10px;color:var(--muted);font-family:'Zilla Slab',serif;font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:13px}
 
   /* Gallery */
   .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
@@ -354,8 +357,11 @@
     <div class="sec-head"><h2>The Benders</h2><div class="eyebrow">Our favourite people</div></div>
     <p class="bio" style="max-width:740px">The Benders are the crew who follow Crossfield Bend from room to room: the regulars down front, the ones who know the words, the reason a Tuesday night feels like a party. Come out, say hi, and get bent. Tag your photos <a href="https://www.instagram.com/crossfield_bend/" target="_blank" rel="noopener">@crossfield_bend</a> and we will add you here.</p>
     <div class="gallery" style="margin-top:28px">
-      <img class="wide" src="assets/gallery-02.jpg" alt="The Benders out at a Crossfield Bend show" />
-      <img src="assets/live.jpg" alt="Crossfield Bend fans at Roc'n Doc's, Port Credit" />
+      <img class="wide" src="assets/gallery-02.jpg" alt="The crowd at a Crossfield Bend show" />
+      <img src="assets/bender-02.jpg" alt="A Bender and the band at the Donegal Arms" />
+      <img src="assets/bender-01.jpg" alt="Benders out for a Crossfield Bend night" />
+      <img src="assets/bender-03.jpg" alt="A Bender enjoying the show" />
+      <img src="assets/live.jpg" alt="A full room at Roc'n Doc's, Port Credit" />
     </div>
     <div style="margin-top:24px"><a href="#contact" class="btn">Become a Bender</a></div>
   </div>
@@ -365,7 +371,15 @@
 <section id="watch">
   <div class="wrap">
     <div class="sec-head"><h2>Watch</h2><div class="eyebrow">Live and in motion</div></div>
-    <div class="videos">
+    <figure class="feature-vid">
+      <video src="assets/live-01.mp4" poster="assets/live-01-poster.jpg" controls playsinline preload="metadata"></video>
+      <figcaption>Live on the patio, Port Credit</figcaption>
+    </figure>
+    <div class="videos" style="margin-top:24px">
+      <figure class="vid">
+        <video src="assets/live-02.mp4" poster="assets/live-02-poster.jpg" controls playsinline preload="metadata"></video>
+        <figcaption>A Bender's-eye view, Port Credit patio</figcaption>
+      </figure>
       <figure class="vid">
         <video src="assets/motion.mp4" poster="assets/motion-poster.jpg" controls playsinline preload="metadata"></video>
         <figcaption>Down the road to The Ivy Bridge · Nov 7</figcaption>
