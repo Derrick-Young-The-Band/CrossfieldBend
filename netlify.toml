@@ -1,3 +1,8 @@
 [build]
   publish = "."
   command = ""
+
+[[redirects]]
+  from = "/epk"
+  to = "/epk.html"
+  status = 200
