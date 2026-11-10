@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#1f6a46" />
+<meta name="theme-color" content="#2f5238" />
 <meta name="google-site-verification" content="f0yx2kujrLZvFGf-WeweWolNfI7d2db1JgjHgdv9GWg" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://crossfieldbend.com/" />
@@ -31,20 +31,20 @@
 <link rel="icon" href="assets/og.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Overpass:wght@400;600;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Overpass:wght@400;600;800;900&display=swap" rel="stylesheet" />
 
 <style>
   /* Palette sampled from the road-trip promo */
   :root{
-    --sky:#88c9ca; --mint:#b0d6cc; --haze:#ebe4bd; --sun:#ffe085; --plate:#f5c84c;
-    --mesa:#da6f45; --pink:#cb8ba2; --sand:#f1b267; --sandlt:#f8dcae; --road:#817a8a;
-    --sign:#1f6a46; --paper:#fbf5e6; --ink:#2a2230; --muted:#5f5566; --white:#fffdf7;
+    --sky:#7f9f7e; --mint:#a9bf9e; --haze:#f3e4c4; --sun:#f2b95c; --plate:#e8a945;
+    --mesa:#c95f2e; --pink:#e08a4f; --sand:#e9b25f; --sandlt:#f4dfb6; --road:#5b3b27;
+    --sign:#2f5238; --paper:#f6ead0; --ink:#2b1d14; --muted:#6b5545; --white:#fcf5e3;
     --edge:2.5px solid var(--ink); --pop:5px 5px 0 var(--ink); --maxw:1140px;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:'Overpass',system-ui,sans-serif;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
-  h1,h2,h3,.disp{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;line-height:1;margin:0;letter-spacing:-.02em}
+  h1,h2,h3,.disp{font-family:'Alfa Slab One',Georgia,serif;font-weight:400;line-height:1.05;margin:0;letter-spacing:.005em}
   a{color:var(--sign);text-decoration-thickness:2px;text-underline-offset:3px}
   a:hover{color:var(--mesa)}
   img{max-width:100%;display:block}
@@ -68,11 +68,10 @@
   .navtoggle{display:none;background:none;border:0;color:var(--paper);font-size:28px;cursor:pointer}
 
   /* Hero: the desert road from the promo */
-  .hero{position:relative;min-height:min(100svh,900px);padding-bottom:calc(clamp(190px,33vh,360px) + 8px);overflow:hidden;border-bottom:var(--edge);
-    background:linear-gradient(180deg,var(--sky) 0 14%,#9ccfcb 14% 24%,var(--mint) 24% 33%,#cfe0c6 33% 41%,var(--haze) 41% 100%)}
+  .hero{position:relative;min-height:min(100svh,900px);padding-bottom:calc(clamp(190px,33vh,360px) + 8px);overflow:hidden;border-bottom:var(--edge);background:#7f9f7e}
   .hero .scene{position:absolute;inset:0;width:100%;height:100%}
   .hero .inner{position:relative;z-index:3;display:flex;flex-direction:column;align-items:center;text-align:center;padding:34px 20px 0}
-  .hero .signpost{background:var(--sign);border:3px solid var(--white);box-shadow:0 0 0 3px var(--sign),0 0 0 5.5px var(--ink),8px 10px 0 5.5px rgba(42,34,48,.25);
+  .hero .signpost{background:var(--sign);border:3px solid var(--white);box-shadow:0 0 0 3px var(--sign),0 0 0 5.5px var(--ink),8px 10px 0 5.5px rgba(43,29,20,.25);
     border-radius:16px;padding:22px 30px 20px;max-width:620px;width:100%}
   .hero .signpost .logo{width:min(440px,78vw);height:auto;margin:0 auto}
   .hero .signpost .rule{height:3px;background:var(--white);margin:14px 0 12px;border-radius:2px}
@@ -81,7 +80,7 @@
   .hero .cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:20px}
   .hero .infl{font-size:15px;color:var(--ink);max-width:560px;margin:14px auto 0;font-weight:600}
   .hero .band{position:absolute;z-index:2;left:50%;bottom:0;transform:translateX(-50%);display:flex;align-items:flex-end;justify-content:center;gap:0;width:min(1100px,100%);pointer-events:none}
-  .hero .band img{height:clamp(170px,30vh,330px);width:auto;filter:drop-shadow(0 6px 0 rgba(42,34,48,.18))}
+  .hero .band img{height:clamp(170px,30vh,330px);width:auto;filter:drop-shadow(0 6px 0 rgba(43,29,20,.18))}
   .hero .band img.al{height:clamp(190px,33vh,360px);margin:0 -1%}
 
   /* Sections */
@@ -93,7 +92,7 @@
   #about{background:var(--mint)}
   #benders{background:var(--sandlt)}
   #watch{background:var(--paper)}
-  #gallery{background:#d6ebe8}
+  #gallery{background:#dfe3c9}
   #contact{background:var(--sandlt)}
 
   /* Credential strip */
@@ -113,18 +112,18 @@
   .hsign .lbl{font-weight:900;font-size:13px;letter-spacing:.2em;opacity:.85;text-transform:uppercase}
   .hsign .hdate{font-family:'Overpass',sans-serif;font-weight:900;font-size:clamp(40px,6vw,60px);line-height:1;margin:6px 0 4px;text-transform:uppercase}
   .hsign .htime{font-weight:900;font-size:clamp(22px,3vw,28px);color:var(--sun)}
-  .hsign .hven{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(24px,3vw,30px);margin-top:12px}
+  .hsign .hven{font-family:'Alfa Slab One',Georgia,serif;font-weight:800;font-size:clamp(24px,3vw,30px);margin-top:12px}
   .hsign .hven .arr{display:inline-block;margin-left:8px}
   .hsign .haddr{font-weight:600;font-size:15px;letter-spacing:.08em;opacity:.92;text-transform:uppercase}
   .plate-get{display:table;margin:20px auto 0;background:var(--plate);color:var(--ink);font-family:'Overpass',sans-serif;font-weight:900;text-transform:uppercase;
     letter-spacing:.16em;font-size:16px;padding:8px 18px 6px;border-radius:7px;border:var(--edge)}
   .nextwrap .poster{border-radius:14px;border:var(--edge);box-shadow:var(--pop);width:100%;transform:rotate(2deg)}
 
-  .show{display:flex;align-items:center;gap:20px;padding:18px 4px;border-bottom:2px dashed rgba(42,34,48,.25);flex-wrap:wrap}
+  .show{display:flex;align-items:center;gap:20px;padding:18px 4px;border-bottom:2px dashed rgba(43,29,20,.25);flex-wrap:wrap}
   .show:last-of-type{border-bottom:0}
   .show .date{font-family:'Overpass',sans-serif;font-weight:900;text-transform:uppercase;font-size:22px;min-width:150px;color:var(--mesa)}
   .show .where{flex:1;min-width:200px}
-  .show .where .v{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px}
+  .show .where .v{font-family:'Alfa Slab One',Georgia,serif;font-weight:700;font-size:20px}
   .show .where .c{color:var(--muted);font-size:15px}
   .limit{display:flex;flex-direction:column;align-items:center;background:var(--white);color:var(--ink);border:var(--edge);box-shadow:3px 3px 0 var(--ink);
     border-radius:6px;padding:4px 9px 4px;min-width:74px;line-height:1;text-transform:uppercase}
@@ -214,10 +213,10 @@
   .vcard h3{font-size:26px;margin-bottom:10px}
   .vcard p{margin:0;color:var(--muted)}
   .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-  #faq{background:#e3f0ec}
+  #faq{background:#e4e6cc}
   .faq{display:grid;gap:12px;max-width:820px}
   .qa{background:var(--white);border:var(--edge);border-radius:14px;box-shadow:3px 3px 0 var(--ink)}
-  .qa summary{cursor:pointer;list-style:none;padding:16px 50px 14px 20px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;position:relative}
+  .qa summary{cursor:pointer;list-style:none;padding:16px 50px 14px 20px;font-family:'Alfa Slab One',Georgia,serif;font-weight:700;font-size:20px;position:relative}
   .qa summary::-webkit-details-marker{display:none}
   .qa summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);width:26px;height:26px;border:var(--edge);border-radius:50%;
     display:flex;align-items:center;justify-content:center;font-family:'Overpass',sans-serif;font-weight:900;font-size:18px;line-height:1;background:var(--plate)}
@@ -248,13 +247,18 @@
   @media(prefers-reduced-motion:reduce){.btn{transition:none}}
   img{height:auto}
   .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-  .skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--plate,#f5c84c);color:#2a2230;border:2px solid #2a2230;border-radius:8px;padding:8px 14px 6px;font-weight:900;text-decoration:none}
+  .skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--plate,#e8a945);color:#2b1d14;border:2px solid #2b1d14;border-radius:8px;padding:8px 14px 6px;font-weight:900;text-decoration:none}
   .skip:focus{top:10px}
-  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #da6f45;outline-offset:3px}
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #c95f2e;outline-offset:3px}
   @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   .navright{display:flex;align-items:center;gap:10px}
   .navbook{display:none}
   @media(max-width:760px){.navbook{display:inline-block}}
+  /* Screen-print grain over everything, like the poster */
+  html{font-synthesis:none}
+  body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:200;opacity:.10;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .17 0 0 0 0 .11 0 0 0 0 .08 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  @media print{body::after{display:none}}
 </style>
 
 <script type="application/ld+json">
@@ -414,20 +418,40 @@
 <!-- HERO -->
 <section class="hero" id="top">
   <svg class="scene" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-    <g stroke="#2a2230" stroke-width="4" stroke-linejoin="round">
-      <g stroke-width="5" stroke-linecap="round" opacity=".55"><path d="M1190 70 L1230 20"/><path d="M1290 60 L1300 0"/><path d="M1350 100 L1410 70"/><path d="M1120 120 L1070 90"/></g>
-      <circle cx="1240" cy="170" r="92" fill="#ffe085"/>
-      <path d="M-20 560 L-20 440 L90 440 L120 410 L330 410 L360 450 L470 450 L500 560 Z" fill="#da6f45"/>
-      <path d="M380 560 L420 480 L600 480 L640 520 L720 520 L760 560 Z" fill="#cb8ba2"/>
-      <path d="M900 560 L940 470 L1150 470 L1180 430 L1360 430 L1400 480 L1460 480 L1460 560 Z" fill="#da6f45"/>
-      <path d="M1080 560 L1110 500 L1260 500 L1300 560 Z" fill="#cb8ba2"/>
-      <rect x="-20" y="556" width="1480" height="360" fill="#f1b267"/>
-      <path d="M660 556 L780 556 L1240 910 L200 910 Z" fill="#817a8a"/>
-      <g fill="#3d8a4a" stroke-width="3.5"><path d="M150 640 v-58 a12 12 0 0 1 24 0 v58 Z M150 610 h-16 v-22 a8 8 0 0 1 16 0 M174 600 h16 v-26 a8 8 0 0 0 -16 0"/>
-      <path d="M1290 660 v-74 a14 14 0 0 1 28 0 v74 Z M1290 624 h-18 v-26 a9 9 0 0 1 18 0 M1318 612 h18 v-30 a9 9 0 0 0 -18 0"/></g>
+    <rect width="1440" height="900" fill="#7f9f7e"/>
+    <g fill="#f3e4c4" stroke="#2b1d14" stroke-width="3.5" stroke-linejoin="round">
+      <path d="M60 236 h330 c4-22-18-38-40-30 c-6-34-50-46-74-22 c-14-34-66-38-84-6 c-26-14-60 0-62 28 c-30-6-56 8-70 30 Z"/>
+      <path d="M520 150 h250 c2-20-16-32-34-26 c-8-28-44-36-62-16 c-16-26-58-24-70 4 c-24-8-50 8-52 30 c-16 0-28 4-32 8 Z"/>
+      <path d="M980 214 h400 c6-26-20-44-46-34 c-6-38-54-52-82-24 c-16-40-74-44-96-8 c-30-16-70 0-72 32 c-38-8-70 10-104 34 Z"/>
+      <path d="M1180 470 h240 c0-18-18-30-36-24 c-10-26-48-30-62-8 c-22-16-56-6-60 18 c-34-4-62 6-82 14 Z"/>
+      <path d="M0 470 h200 c0-18-18-30-36-24 c-10-26-48-30-62-8 c-22-16-56-6-60 18 c-14-2-30 4-42 14 Z"/>
     </g>
-    <path d="M668 560 L210 900" stroke="#fffdf7" stroke-width="8"/><path d="M772 560 L1230 900" stroke="#fffdf7" stroke-width="8"/>
-    <path d="M720 562 L720 900" stroke="#f5c84c" stroke-width="10" stroke-dasharray="34 30"/>
+    <g fill="#f3e4c4"><rect x="250" y="276" width="300" height="9" rx="4.5"/><rect x="430" y="300" width="180" height="7" rx="3.5"/><rect x="760" y="262" width="260" height="9" rx="4.5"/><rect x="1040" y="292" width="210" height="7" rx="3.5"/><rect x="120" y="390" width="230" height="8" rx="4"/></g>
+    <circle cx="1090" cy="528" r="96" fill="#e9894c" stroke="#2b1d14" stroke-width="3.5"/>
+    <g fill="#7f9f7e"><rect x="980" y="540" width="230" height="7"/><rect x="990" y="556" width="210" height="5"/></g>
+    <g stroke="#2b1d14" stroke-width="3.5" stroke-linejoin="round">
+      <path d="M380 562 L410 520 L520 520 L540 548 L610 548 L630 562 Z" fill="#d9774a"/>
+      <path d="M760 562 L790 528 L870 528 L900 562 Z" fill="#d9774a"/>
+      <path d="M1180 562 L1210 520 L1300 520 L1330 562 Z" fill="#d9774a"/>
+      <path d="M70 562 L120 470 L150 470 L150 362 L250 362 L250 470 L278 470 L330 562 Z" fill="#c95f2e"/>
+      <path d="M250 362 L250 470 L278 470 L330 562 L262 562 L222 474 L222 372 Z" fill="#8a3e1d" stroke="none"/>
+      <path d="M1160 562 L1200 476 L1228 476 L1228 392 L1300 392 L1300 476 L1330 476 L1372 562 Z" fill="#c95f2e"/>
+      <path d="M1300 392 L1300 476 L1330 476 L1372 562 L1318 562 L1282 482 L1282 400 Z" fill="#8a3e1d" stroke="none"/>
+      <path d="M1340 562 L1360 500 L1400 500 L1400 444 L1450 444 L1450 562 Z" fill="#c95f2e"/>
+    </g>
+    <rect x="-10" y="560" width="1460" height="350" fill="#e07a3c" stroke="#2b1d14" stroke-width="3.5"/>
+    <g fill="#e9b25f"><path d="M0 620 C200 600 380 640 560 616 C620 610 640 630 560 650 C380 690 160 660 0 680 Z"/><path d="M900 610 C1060 590 1260 620 1440 600 L1440 660 C1240 690 1060 650 920 640 C880 636 870 616 900 610 Z"/><path d="M60 760 C220 740 360 770 420 800 L0 820 Z"/><path d="M1100 770 C1240 740 1380 760 1440 760 L1440 830 C1320 810 1180 810 1100 770 Z"/></g>
+    <path d="M708 562 C700 600 640 620 650 660 C660 720 560 760 470 910 L980 910 C860 780 780 730 790 668 C796 624 736 604 732 562 Z" fill="#f1dcb0" stroke="#2b1d14" stroke-width="3.5" stroke-linejoin="round"/>
+    <g stroke="#2b1d14" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M930 562 L944 450 L958 562"/><path d="M937 506 L951 506"/><path d="M934 532 L954 532"/>
+      <circle cx="944" cy="444" r="22" fill="#f3e4c4"/><path d="M944 422 V466 M922 444 H966 M928 428 L960 460 M960 428 L928 460"/>
+      <path d="M966 444 h26 l-6 10 h-20" fill="#2b1d14"/>
+    </g>
+    <g fill="#6f8a55" stroke="#2b1d14" stroke-width="2.5" stroke-linejoin="round">
+      <path d="M120 700 l10-30 l8 22 l6-34 l8 32 l10-24 l4 34 Z"/><path d="M340 640 l7-20 l6 14 l5-24 l6 22 l7-16 l3 24 Z"/>
+      <path d="M1180 690 l10-30 l8 22 l6-34 l8 32 l10-24 l4 34 Z"/><path d="M1020 630 l7-20 l6 14 l5-24 l6 22 l7-16 l3 24 Z"/>
+      <path d="M1340 760 l12-36 l10 26 l7-40 l10 38 l12-28 l5 40 Z"/><path d="M40 820 l12-36 l10 26 l7-40 l10 38 l12-28 l5 40 Z"/>
+    </g>
   </svg>
   <div class="inner">
     <div class="signpost">
