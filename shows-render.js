@@ -110,8 +110,29 @@
     }).join('') : '<div class="row"><div class="w"><span>New dates coming soon.</span></div></div>';
   }
 
+
+  /* Fan actions: Google Maps directions and an .ics calendar file */
+  function icsStamp(d) { return d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, ''); }
+  function icsEsc(t) { return String(t).replace(/\\/g, '\\\\').replace(/([,;])/g, '\\$1'); }
+  function icsHref(s) {
+    var lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Crossfield Bend//Shows//EN', 'BEGIN:VEVENT',
+      'UID:' + icsStamp(s.s) + '-' + s.venue.replace(/[^A-Za-z0-9]/g, '') + '@crossfieldbend.com',
+      'DTSTAMP:' + icsStamp(new Date()), 'DTSTART:' + icsStamp(s.s), 'DTEND:' + icsStamp(s.e),
+      'SUMMARY:' + icsEsc(eventName(s)), 'LOCATION:' + icsEsc(s.venue + ', ' + s.addr),
+      'URL:' + SITE + '/#shows', 'END:VEVENT', 'END:VCALENDAR'];
+    return 'data:text/calendar;charset=utf-8,' + encodeURIComponent(lines.join('\r\n'));
+  }
+  function mapsHref(s) { return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(s.venue + ', ' + s.addr); }
+  function actionsHTML(s) {
+    var day = s.start.slice(0, 10);
+    return '<div class="acts">' +
+      '<a class="btn ghost sm" href="' + mapsHref(s) + '" target="_blank" rel="noopener">Directions</a>' +
+      '<a class="btn ghost sm" href="' + icsHref(s) + '" download="crossfield-bend-' + day + '.ics">Add to calendar</a>' +
+      '</div>';
+  }
+
   window.CFB = Object.assign(window.CFB || {}, {
     upcoming: upcoming, past: past, timeRange: timeRange, label: label, eventName: eventName,
-    wd: wd, md: md, esc: esc, renderHome: renderHome, renderEpk: renderEpk, jsonld: jsonld
+    wd: wd, md: md, esc: esc, actionsHTML: actionsHTML, icsHref: icsHref, mapsHref: mapsHref, renderHome: renderHome, renderEpk: renderEpk, jsonld: jsonld
   });
 })();
