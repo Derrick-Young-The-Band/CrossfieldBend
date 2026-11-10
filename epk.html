@@ -293,8 +293,8 @@
   <div class="wrap">
     <div class="eyebrow sec-eyebrow">On the calendar</div>
     <h2>Upcoming shows</h2>
-    <div style="margin-top:14px">
-      <div class="row"><div class="d">Tue · from Dec 1</div><div class="w"><b>Roc'n Doc's · Tuesday Night Music Club</b><br><span>105 Lakeshore Rd E, Port Credit, ON · every other Tuesday · 7–11 PM</span></div></div>
+    <div style="margin-top:14px" id="epk-shows">
+      <div class="row"><div class="w"><span>Tuesday Night Music Club at Roc'n Doc's, Port Credit, every other Tuesday.</span></div></div>
     </div>
   </div>
 </section>
@@ -422,5 +422,8 @@
     <div style="margin-top:8px">Crossfield Bend · Americana roots trio · Mississauga &amp; Port Credit, ON</div>
   </div>
 </footer>
+<script src="shows.js"></script>
+<script src="shows-render.js"></script>
+<script>CFB.renderEpk(new Date());</script>
 </body>
 </html>
