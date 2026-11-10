@@ -174,7 +174,7 @@
   form.mail{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
   form.mail input,.bookform input,.bookform select,.bookform textarea{background:var(--paper);border:var(--edge);color:var(--ink);padding:12px 14px;border-radius:10px;font-family:'Overpass',sans-serif;font-size:16px;width:100%}
   form.mail input{flex:1;min-width:200px;width:auto}
-  form.mail input:focus,.bookform input:focus,.bookform select:focus,.bookform textarea:focus{outline:3px solid var(--plate);outline-offset:1px}
+  form.mail input:focus,.bookform input:focus,.bookform select:focus,.bookform textarea:focus{outline:3px solid var(--mesa);outline-offset:1px}
   .bookform{display:flex;flex-direction:column;gap:12px;margin-top:6px}
   .bookform .f2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
   .hp{position:absolute;left:-9999px;height:0;overflow:hidden}
@@ -225,6 +225,15 @@
     .road.bent{height:84px}.road .paint{font-size:46px}
   }
   @media(prefers-reduced-motion:reduce){.btn{transition:none}}
+  img{height:auto}
+  .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  .skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--plate,#f5c84c);color:#2a2230;border:2px solid #2a2230;border-radius:8px;padding:8px 14px 6px;font-weight:900;text-decoration:none}
+  .skip:focus{top:10px}
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #da6f45;outline-offset:3px}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  .navright{display:flex;align-items:center;gap:10px}
+  .navbook{display:none}
+  @media(max-width:760px){.navbook{display:inline-block}}
 </style>
 
 <script type="application/ld+json">
@@ -250,11 +259,15 @@
 </script>
 </head>
 <body>
+<a class="skip" href="#shows">Skip to shows</a>
 
 <header class="nav">
   <div class="wrap">
-    <img class="logo" src="assets/logo.png" alt="Crossfield Bend" />
-    <button class="navtoggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">≡</button>
+    <img width="1000" height="320" class="logo" src="assets/logo.png" alt="Crossfield Bend" />
+    <div class="navright">
+      <a href="#contact" class="btn sm navbook">Book</a>
+      <button class="navtoggle" id="navtoggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav">≡</button>
+    </div>
     <nav class="links" id="nav">
       <a href="#shows">Shows</a>
       <a href="#about">Band</a>
@@ -285,7 +298,7 @@
   </svg>
   <div class="inner">
     <div class="signpost">
-      <h1 style="margin:0"><img class="logo" src="assets/logo.png" alt="Crossfield Bend" /></h1>
+      <h1 style="margin:0"><img width="1000" height="320" class="logo" src="assets/logo.png" alt="Crossfield Bend" /></h1>
       <div class="rule"></div>
       <p class="tag">Americana roots trio · Fiddle · Guitars · Harmonica</p>
     </div>
@@ -296,9 +309,9 @@
     </div>
   </div>
   <div class="band" aria-hidden="true">
-    <img src="assets/kevin-road.png" alt="" />
-    <img class="al" src="assets/allison-road.png" alt="" />
-    <img src="assets/maurie-road.png" alt="" />
+    <img width="929" height="820" src="assets/kevin-road.png" alt="" />
+    <img width="459" height="820" class="al" src="assets/allison-road.png" alt="" />
+    <img width="951" height="820" src="assets/maurie-road.png" alt="" />
   </div>
 </section>
 
@@ -318,7 +331,7 @@
     <div class="nextwrap" id="nextwrap">
       <div>
         <div class="hsign" role="group" aria-label="Next show">
-          <img class="hlogo" src="assets/logo.png" alt="Crossfield Bend" />
+          <img width="1000" height="320" class="hlogo" src="assets/logo.png" alt="Crossfield Bend" />
           <div class="rule"></div>
           <div class="lbl">Next stop</div>
           <div class="hdate" id="ns-date">Tue Dec 1</div>
@@ -329,7 +342,7 @@
         </div>
         <span class="plate-get">Get bent</span>
       </div>
-      <img loading="lazy" class="poster" id="ns-poster" src="assets/tuesday-poster-full.jpg" alt="Tuesday Night Music Club at Roc'n Doc's, every other Tuesday" />
+      <img width="1080" height="1350" loading="lazy" class="poster" id="ns-poster" src="assets/tuesday-poster-full.jpg" alt="Tuesday Night Music Club at Roc'n Doc's, every other Tuesday" />
     </div>
 
     <h3 class="hwy" style="font-size:20px;color:var(--mesa);margin-bottom:6px">Tuesday Night Music Club · every other Tuesday</h3>
@@ -366,15 +379,15 @@
     <div class="sec-head" style="margin-top:52px;margin-bottom:26px"><h3 style="font-size:clamp(24px,3.4vw,34px);color:var(--ink)">Meet the players</h3></div>
     <div class="members" style="margin-top:0">
       <div class="member">
-        <div class="photo cut"><img loading="lazy" src="assets/allison-road.png" alt="Allison Leroux of Crossfield Bend on fiddle" /></div>
+        <div class="photo cut"><img width="459" height="820" loading="lazy" src="assets/allison-road.png" alt="Allison Leroux of Crossfield Bend on fiddle" /></div>
         <div class="body"><h3>Allison Leroux</h3><div class="role">Fiddle · Vocals</div><p class="bio2">Has opened for The Chicks, Gowan and Dallas Smith, and played Boots &amp; Hearts and the Toronto Folk Festival. 2024 Lieutenant Governor's Ontario Heritage Award.</p><a class="ig" href="https://www.instagram.com/allisonlerouxmusic/" target="_blank" rel="noopener">Instagram</a><a class="ig" href="https://linktr.ee/allisonleroux" style="margin-left:16px" target="_blank" rel="noopener">Linktree</a></div>
       </div>
       <div class="member">
-        <div class="photo cut"><img loading="lazy" src="assets/maurie-road.png" alt="Maurie Swan of Crossfield Bend on guitar" /></div>
+        <div class="photo cut"><img width="951" height="820" loading="lazy" src="assets/maurie-road.png" alt="Maurie Swan of Crossfield Bend on guitar" /></div>
         <div class="body"><h3>Maurie Swan</h3><div class="role">Guitar · Vocals</div><p class="bio2">Songs and six-string. A regular on the Southside Shuffle and the Port Credit circuit.</p><a class="ig" href="https://www.instagram.com/maurieswan/" target="_blank" rel="noopener">@maurieswan</a></div>
       </div>
       <div class="member">
-        <div class="photo cut"><img loading="lazy" src="assets/kevin-road.png" alt="Kevin McConnell of Crossfield Bend on guitar and harmonica" /></div>
+        <div class="photo cut"><img width="929" height="820" loading="lazy" src="assets/kevin-road.png" alt="Kevin McConnell of Crossfield Bend on guitar and harmonica" /></div>
         <div class="body"><h3>Kevin McConnell</h3><div class="role">Guitar · Harmonica</div><p class="bio2">Guitar and harp. A regular on the Southside Shuffle and the Port Credit circuit.</p><a class="ig" href="https://www.instagram.com/kevinjmcconnell/" target="_blank" rel="noopener">@kevinjmcconnell</a></div>
       </div>
     </div>
@@ -387,12 +400,12 @@
     <div class="sec-head"><h2>The Benders</h2><div class="eyebrow plate">Our favourite people</div></div>
     <p class="bio" style="max-width:740px">The Benders are the crew who follow Crossfield Bend from room to room: the regulars down front, the ones who know the words, the reason a Tuesday night feels like a party. Come out, say hi, and get bent. Tag your photos <a href="https://www.instagram.com/crossfield_bend/" target="_blank" rel="noopener">@crossfield_bend</a> and we will add you here.</p>
     <div class="gallery" style="margin-top:28px">
-      <img loading="lazy" class="wide" src="assets/bender-04.jpg" alt="The Benders gathered at a backyard party" />
-      <img loading="lazy" src="assets/bender-02.jpg" alt="A Bender and the band at the Donegal Arms" />
-      <img loading="lazy" src="assets/bender-01.jpg" alt="Benders out for a Crossfield Bend night" />
-      <img loading="lazy" src="assets/bender-03.jpg" alt="A Bender enjoying the show" />
-      <img loading="lazy" src="assets/gallery-02.jpg" alt="The crowd at a Crossfield Bend show" />
-      <img loading="lazy" src="assets/live.jpg" alt="A full room at Roc'n Doc's, Port Credit" />
+      <img width="1600" height="1200" loading="lazy" class="wide" src="assets/bender-04.jpg" alt="The Benders gathered at a backyard party" />
+      <img width="1500" height="2000" loading="lazy" src="assets/bender-02.jpg" alt="A Bender and the band at the Donegal Arms" />
+      <img width="1500" height="2000" loading="lazy" src="assets/bender-01.jpg" alt="Benders out for a Crossfield Bend night" />
+      <img width="1500" height="2000" loading="lazy" src="assets/bender-03.jpg" alt="A Bender enjoying the show" />
+      <img width="1600" height="1046" loading="lazy" src="assets/gallery-02.jpg" alt="The crowd at a Crossfield Bend show" />
+      <img width="2000" height="1500" loading="lazy" src="assets/live.jpg" alt="A full room at Roc'n Doc's, Port Credit" />
     </div>
     <div style="margin-top:24px"><a href="#contact" class="btn">Become a Bender</a></div>
   </div>
@@ -429,18 +442,18 @@
   <div class="wrap">
     <div class="sec-head"><h2>Gallery</h2><div class="eyebrow plate">On stage and off</div></div>
     <div class="gallery">
-      <img loading="lazy" class="wide" src="assets/gallery-01.jpg" alt="Crossfield Bend live, the full three-piece under a festival tent" />
-      <img loading="lazy" src="assets/gallery-02.jpg" alt="Crossfield Bend playing a park bandshell to a seated crowd" />
-      <img loading="lazy" src="assets/gallery-05.jpg" alt="Allison Leroux on fiddle and vocals" />
-      <img loading="lazy" src="assets/gallery-07.jpg" alt="Kevin McConnell singing, guitar and harmonica" />
-      <img loading="lazy" src="assets/gallery-09.jpg" alt="Maurie Swan on guitar and vocals" />
-      <img loading="lazy" src="assets/gallery-03.jpg" alt="Crossfield Bend as a three-piece, Maurie Swan singing lead" />
-      <img loading="lazy" src="assets/gallery-08.jpg" alt="Kevin McConnell on harmonica and guitar" />
-      <img loading="lazy" src="assets/gallery-06.jpg" alt="Allison Leroux playing fiddle" />
-      <img loading="lazy" src="assets/gallery-04.jpg" alt="Crossfield Bend on an outdoor festival stage" />
-      <img loading="lazy" src="assets/gallery-10.jpg" alt="Maurie Swan at a show" />
-      <img loading="lazy" src="assets/gallery-11.jpg" alt="Kevin McConnell at a show" />
-      <img loading="lazy" src="assets/gallery-12.jpg" alt="Maurie Swan and Kevin McConnell at golden hour" />
+      <img width="1600" height="1088" loading="lazy" class="wide" src="assets/gallery-01.jpg" alt="Crossfield Bend live, the full three-piece under a festival tent" />
+      <img width="1600" height="1046" loading="lazy" src="assets/gallery-02.jpg" alt="Crossfield Bend playing a park bandshell to a seated crowd" />
+      <img width="1215" height="2048" loading="lazy" src="assets/gallery-05.jpg" alt="Allison Leroux on fiddle and vocals" />
+      <img width="1281" height="2048" loading="lazy" src="assets/gallery-07.jpg" alt="Kevin McConnell singing, guitar and harmonica" />
+      <img width="1365" height="2048" loading="lazy" src="assets/gallery-09.jpg" alt="Maurie Swan on guitar and vocals" />
+      <img width="1600" height="950" loading="lazy" src="assets/gallery-03.jpg" alt="Crossfield Bend as a three-piece, Maurie Swan singing lead" />
+      <img width="1281" height="2048" loading="lazy" src="assets/gallery-08.jpg" alt="Kevin McConnell on harmonica and guitar" />
+      <img width="1304" height="2048" loading="lazy" src="assets/gallery-06.jpg" alt="Allison Leroux playing fiddle" />
+      <img width="1600" height="856" loading="lazy" src="assets/gallery-04.jpg" alt="Crossfield Bend on an outdoor festival stage" />
+      <img width="1449" height="2048" loading="lazy" src="assets/gallery-10.jpg" alt="Maurie Swan at a show" />
+      <img width="1496" height="2048" loading="lazy" src="assets/gallery-11.jpg" alt="Kevin McConnell at a show" />
+      <img width="1600" height="1066" loading="lazy" src="assets/gallery-12.jpg" alt="Maurie Swan and Kevin McConnell at golden hour" />
     </div>
   </div>
 </section>
@@ -457,15 +470,15 @@
           <input type="hidden" name="form-name" value="booking" />
           <p class="hp"><label>Leave this empty: <input name="bot-field" /></label></p>
           <div class="f2">
-            <input name="name" placeholder="Your name" required />
-            <input type="email" name="email" placeholder="Email" required />
+            <span><label class="sr-only" for="bk-name">Your name</label><input id="bk-name" name="name" placeholder="Your name" required /></span>
+            <span><label class="sr-only" for="bk-email">Email</label><input id="bk-email" type="email" name="email" placeholder="Email" required /></span>
           </div>
           <div class="f2">
-            <input type="date" name="date" aria-label="Event date" />
-            <input name="city" placeholder="City" />
+            <span><label class="sr-only" for="bk-date">Event date</label><input id="bk-date" type="date" name="date" /></span>
+            <span><label class="sr-only" for="bk-city">City</label><input id="bk-city" name="city" placeholder="City" /></span>
           </div>
-          <input name="venue" placeholder="Venue" />
-          <select name="event_type" aria-label="Type of event">
+          <label class="sr-only" for="bk-venue">Venue</label><input id="bk-venue" name="venue" placeholder="Venue" />
+          <label class="sr-only" for="bk-type">Type of event</label><select id="bk-type" name="event_type">
             <option value="">Type of event</option>
             <option>Bar or club</option>
             <option>Festival</option>
@@ -474,7 +487,7 @@
             <option>Corporate</option>
             <option>Other</option>
           </select>
-          <select name="budget" aria-label="Budget range">
+          <label class="sr-only" for="bk-budget">Budget range</label><select id="bk-budget" name="budget">
             <option value="">Budget range</option>
             <option>Under $500</option>
             <option>$500 to $1000</option>
@@ -482,7 +495,7 @@
             <option>$2000+</option>
             <option>Not sure yet</option>
           </select>
-          <textarea name="message" rows="3" placeholder="Anything else?"></textarea>
+          <label class="sr-only" for="bk-msg">Anything else?</label><textarea id="bk-msg" name="message" rows="3" placeholder="Anything else?"></textarea>
           <button class="btn" type="submit">Send booking request</button>
         </form>
         <p class="lead" style="font-size:14px;margin-top:10px">Or email <a href="mailto:booking@crossfieldbend.com">booking@crossfieldbend.com</a></p>
@@ -498,7 +511,7 @@
         <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="company" class="mail">
           <input type="hidden" name="form-name" value="newsletter" />
           <p class="hp"><label>Leave empty: <input name="company" /></label></p>
-          <input type="email" name="email" placeholder="you@email.com" required />
+          <label class="sr-only" for="nl-email">Email for the mailing list</label><input id="nl-email" type="email" name="email" placeholder="you@email.com" required />
           <button class="btn" type="submit">Sign up</button>
         </form>
       </div>
@@ -509,7 +522,7 @@
 <div class="road bent" aria-hidden="true"><span class="paint">BENT</span></div>
 <footer>
   <div class="wrap">
-    <img class="logo" src="assets/logo.png" alt="Crossfield Bend" />
+    <img width="1000" height="320" class="logo" src="assets/logo.png" alt="Crossfield Bend" />
     <span class="plate-get" style="margin-top:4px">Get bent</span>
     <div class="socials">
       <a href="https://www.instagram.com/crossfield_bend/" target="_blank" rel="noopener">Instagram</a>
@@ -524,8 +537,12 @@
 <script src="shows-render.js"></script>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
-  document.querySelectorAll('#nav a').forEach(function(a){
-    a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open')});
+  var nav=document.getElementById('nav'), tog=document.getElementById('navtoggle');
+  tog.addEventListener('click',function(){
+    var open=nav.classList.toggle('open'); tog.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){ nav.classList.remove('open'); tog.setAttribute('aria-expanded','false'); });
   });
   CFB.renderHome(new Date());
 </script>

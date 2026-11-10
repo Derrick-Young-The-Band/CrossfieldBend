@@ -160,13 +160,19 @@
     .bar .right{flex-wrap:nowrap}
     .bar .btn{padding:8px 14px 6px;font-size:12px}
   }
+  img{height:auto}
+  .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  .skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--plate,#f5c84c);color:#2a2230;border:2px solid #2a2230;border-radius:8px;padding:8px 14px 6px;font-weight:900;text-decoration:none}
+  .skip:focus{top:10px}
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #da6f45;outline-offset:3px}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
 <body>
 
 <header class="bar">
   <div class="wrap">
-    <img class="logo" src="assets/logo.png" alt="Crossfield Bend" />
+    <img width="1000" height="320" class="logo" src="assets/logo.png" alt="Crossfield Bend" />
     <div class="right">
       <span class="tag">Press Kit</span>
       <a class="btn" href="assets/crossfield-bend-press-kit.pdf" download>Download one-sheet (PDF)</a>
@@ -178,7 +184,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <img class="logo" src="assets/logo.png" alt="Crossfield Bend" />
+    <img width="1000" height="320" class="logo" src="assets/logo.png" alt="Crossfield Bend" />
     <h1>Americana roots trio. Fiddle, guitars, and harmonica, built to carry a room.</h1>
     <p class="sub">Festivals, bars, house concerts and private events across Mississauga, Port Credit and the Greater Toronto Area.</p>
     <div class="cta">
@@ -234,7 +240,7 @@
     <h2>Three players, a handful of strings</h2>
     <div class="players">
       <div class="player">
-        <div class="ph"><img loading="lazy" src="assets/allison-road.png" alt="Allison Leroux" /></div>
+        <div class="ph"><img width="459" height="820" loading="lazy" src="assets/allison-road.png" alt="Allison Leroux" /></div>
         <div class="bd">
           <h3>Allison Leroux</h3>
           <div class="role">Fiddle · Vocals</div>
@@ -242,7 +248,7 @@
         </div>
       </div>
       <div class="player">
-        <div class="ph"><img loading="lazy" src="assets/maurie-road.png" alt="Maurie Swan" /></div>
+        <div class="ph"><img width="951" height="820" loading="lazy" src="assets/maurie-road.png" alt="Maurie Swan" /></div>
         <div class="bd">
           <h3>Maurie Swan</h3>
           <div class="role">Guitar · Vocals</div>
@@ -250,7 +256,7 @@
         </div>
       </div>
       <div class="player">
-        <div class="ph"><img loading="lazy" src="assets/kevin-road.png" alt="Kevin McConnell" /></div>
+        <div class="ph"><img width="929" height="820" loading="lazy" src="assets/kevin-road.png" alt="Kevin McConnell" /></div>
         <div class="bd">
           <h3>Kevin McConnell</h3>
           <div class="role">Guitar · Harmonica</div>
@@ -306,12 +312,12 @@
     <h2>Photos</h2>
     <p class="note" style="margin:6px 0 18px">Click any photo to open or download. Full-resolution files available on request.</p>
     <div class="grid-photos">
-      <a class="wide" href="assets/gallery-01.jpg" target="_blank"><img loading="lazy" src="assets/gallery-01.jpg" alt="Crossfield Bend live, full band" /></a>
-      <a href="assets/gallery-05.jpg" target="_blank"><img loading="lazy" src="assets/gallery-05.jpg" alt="Allison Leroux on fiddle" /></a>
-      <a href="assets/gallery-07.jpg" target="_blank"><img loading="lazy" src="assets/gallery-07.jpg" alt="Kevin McConnell" /></a>
-      <a href="assets/gallery-10.jpg" target="_blank"><img loading="lazy" src="assets/gallery-10.jpg" alt="Maurie Swan" /></a>
-      <a href="assets/gallery-03.jpg" target="_blank"><img loading="lazy" src="assets/gallery-03.jpg" alt="Crossfield Bend three-piece" /></a>
-      <a href="assets/gallery-04.jpg" target="_blank"><img loading="lazy" src="assets/gallery-04.jpg" alt="Crossfield Bend on an outdoor stage" /></a>
+      <a class="wide" href="assets/gallery-01.jpg" target="_blank"><img width="1600" height="1088" loading="lazy" src="assets/gallery-01.jpg" alt="Crossfield Bend live, full band" /></a>
+      <a href="assets/gallery-05.jpg" target="_blank"><img width="1215" height="2048" loading="lazy" src="assets/gallery-05.jpg" alt="Allison Leroux on fiddle" /></a>
+      <a href="assets/gallery-07.jpg" target="_blank"><img width="1281" height="2048" loading="lazy" src="assets/gallery-07.jpg" alt="Kevin McConnell" /></a>
+      <a href="assets/gallery-10.jpg" target="_blank"><img width="1449" height="2048" loading="lazy" src="assets/gallery-10.jpg" alt="Maurie Swan" /></a>
+      <a href="assets/gallery-03.jpg" target="_blank"><img width="1600" height="950" loading="lazy" src="assets/gallery-03.jpg" alt="Crossfield Bend three-piece" /></a>
+      <a href="assets/gallery-04.jpg" target="_blank"><img width="1600" height="856" loading="lazy" src="assets/gallery-04.jpg" alt="Crossfield Bend on an outdoor stage" /></a>
     </div>
   </div>
 </section>
