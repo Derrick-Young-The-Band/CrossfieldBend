@@ -40,6 +40,7 @@
       '<div class="date">' + esc(wd(s.s)) + ' · ' + esc(md(s.s)) + '</div>' +
       '<div class="where"><div class="v">' + esc(label(s)) + (s.tag ? ' <span class="tagchip">' + esc(s.tag) + '</span>' : '') + '</div>' +
       '<div class="c">' + esc(s.addr) + (s.area && s.addr.indexOf(s.area) < 0 ? ' · ' + esc(s.area) : '') + '</div>' +
+      (s.note ? '<div class="c note">' + esc(s.note) + '</div>' : '') +
       (window.CFB.actionsHTML ? window.CFB.actionsHTML(s) : '') + '</div>' +
       '<div class="limit" aria-label="' + esc(timeRange(s)) + '"><span class="mx">Maximum</span><span class="n">' + esc(b.t) + '</span><span class="u">' + esc(b.ap) + '</span><span class="fr">From ' + esc(a.t + ' ' + a.ap) + '</span></div>' +
       '</div>';
@@ -83,6 +84,8 @@
         document.getElementById('ns-time').textContent = timeRange(n);
         document.getElementById('ns-venue').textContent = n.venue;
         document.getElementById('ns-addr').textContent = street(n) + ' · ' + n.area;
+        var note = document.getElementById('ns-note');
+        if (note) { note.textContent = n.note || ''; note.style.display = n.note ? '' : 'none'; }
         var poster = document.getElementById('ns-poster');
         if (n.poster) { poster.src = n.poster; poster.alt = label(n) + ', ' + wd(n.s) + ' ' + md(n.s); poster.style.display = ''; }
         else { poster.style.display = 'none'; }
@@ -106,7 +109,8 @@
     var up = upcoming(now);
     box.innerHTML = up.length ? up.map(function (s) {
       return '<div class="row"><div class="d">' + esc(wd(s.s) + ' · ' + md(s.s)) + '</div><div class="w"><b>' + esc(label(s)) + '</b><br><span>' +
-        esc(s.addr) + (s.area && s.addr.indexOf(s.area) < 0 ? ' · ' + esc(s.area) : '') + ' · ' + esc(timeRange(s)) + '</span></div></div>';
+        esc(s.addr) + (s.area && s.addr.indexOf(s.area) < 0 ? ' · ' + esc(s.area) : '') + ' · ' + esc(timeRange(s)) + '</span>' +
+        (s.note ? '<br><span>' + esc(s.note) + '</span>' : '') + '</div></div>';
     }).join('') : '<div class="row"><div class="w"><span>New dates coming soon.</span></div></div>';
   }
 

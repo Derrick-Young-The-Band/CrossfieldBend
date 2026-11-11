@@ -199,6 +199,8 @@
 
   .tagchip{display:inline-block;background:var(--plate);border:var(--edge);border-radius:6px;font-family:'Overpass',sans-serif;font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px 0;margin-left:6px;vertical-align:2px}
   #show-recent{margin-top:10px}
+  .show .where .c.note{color:var(--ink);font-weight:600}
+  .hsign .hnote{margin-top:4px;color:var(--sun);opacity:1}
   .btn.sm{padding:8px 14px 6px;font-size:12px;box-shadow:2px 2px 0 var(--ink)}
   .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
   .hsign .acts{margin-top:16px}
@@ -495,6 +497,7 @@
           <div class="htime" id="ns-time">7–11 PM</div>
           <div class="hven"><span id="ns-venue">Roc'n Doc's</span><span class="arr" aria-hidden="true">↗</span></div>
           <div class="haddr" id="ns-addr">105 Lakeshore Rd E · Port Credit</div>
+          <div class="haddr hnote" id="ns-note" style="display:none"></div>
           <div id="ns-actions"></div>
         </div>
         <span class="plate-get">Get bent</span>
@@ -502,7 +505,7 @@
       <img width="1080" height="1350" loading="lazy" class="poster" id="ns-poster" src="assets/tuesday-poster-full.jpg" alt="Tuesday Night Music Club at Roc'n Doc's, every other Tuesday" />
     </div>
 
-    <h3 class="hwy" style="font-size:20px;color:var(--mesa);margin-bottom:6px">Tuesday Night Music Club · every other Tuesday</h3>
+    <h3 class="hwy" style="font-size:20px;color:var(--mesa);margin-bottom:6px">Coming up</h3>
     <div id="show-list"></div>
     <p class="lead" id="show-empty" style="margin-top:18px;display:none">New dates are on the way.</p>
     <p class="lead" style="margin-top:18px">More dates coming. Join the list below and you will hear first.</p>

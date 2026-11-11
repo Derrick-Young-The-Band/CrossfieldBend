@@ -23,6 +23,7 @@
             11 PM on Dec 1 2026 is "2026-12-01T23:00:00-05:00".
     poster  Optional. A picture in the assets folder, e.g. "assets/poster.jpg".
     tag     Optional. A short label, e.g. "Jam".
+    note    Optional. A second line under the address, e.g. "Roast beef dinner 5–7".
 
   Order does not matter. A show hides itself as soon as its end time passes,
   and the four most recent past shows appear in a small "Recent shows" line.
@@ -36,8 +37,9 @@ window.CFB_SHOWS = [
     area: "Port Credit",
     start: "2026-11-13T17:30:00-05:00",
     end: "2026-11-13T20:30:00-05:00",
-    poster: "assets/legion-poster.jpg",
-    tag: "With Ray Walsh on keys"
+    tag: "With Ray Walsh on keys",
+    note: "Roast beef dinner 5–7",
+    poster: "assets/legion-2026-11-13.jpg"
   },
   {
     title: "Tuesday Night Music Club",
