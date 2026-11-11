@@ -34,15 +34,29 @@
   function label(s) { return s.title === s.venue ? s.venue : s.venue + ' · ' + s.title; }
   function eventName(s) { return s.title === s.venue ? 'Crossfield Bend at ' + s.venue : 'Crossfield Bend: ' + s.title; }
 
+  /* US-highway style route shield: start time big, end time small */
+  function routeHTML(s) {
+    var a = hm(s.s), b = hm(s.e), big = a.t, size = big.length > 2 ? 27 : 40;
+    return '<svg class="route" viewBox="0 0 100 112" role="img" aria-label="Starts ' + esc(a.t + ' ' + a.ap) + ', ends ' + esc(b.t + ' ' + b.ap) + '">' +
+      '<path d="M6 4 H94 C93 12 95 18 98 22 C98 64 80 90 50 108 C20 90 2 64 2 22 C5 18 7 12 6 4 Z" fill="#fcf5e3" stroke="#2b1d14" stroke-width="4" stroke-linejoin="round"/>' +
+      '<path d="M12 10 H88 C87.6 15 88.6 19 91 23 C91 61 75 84 50 99 C25 84 9 61 9 23 C11.4 19 12.4 15 12 10 Z" fill="none" stroke="#2b1d14" stroke-width="1.6"/>' +
+      '<path d="M12 10 H88 C87.6 15 88.6 19 91 23 H9 C11.4 19 12.4 15 12 10 Z" fill="#2b1d14"/>' +
+      '<text x="50" y="19.6" text-anchor="middle" font-family="Overpass,sans-serif" font-weight="900" font-size="9" letter-spacing="1.6" fill="#fcf5e3">STARTS</text>' +
+      '<text x="50" y="' + (size > 30 ? 54 : 50) + '" text-anchor="middle" font-family="Overpass,sans-serif" font-weight="900" font-size="' + size + '" fill="#2b1d14">' + esc(big) + '</text>' +
+      '<text x="50" y="64" text-anchor="middle" font-family="Overpass,sans-serif" font-weight="900" font-size="10" letter-spacing="1" fill="#2b1d14">' + esc(a.ap) + '</text>' +
+      '<path d="M26 69 H74" stroke="#2b1d14" stroke-width="1.6"/>' +
+      '<text x="50" y="79" text-anchor="middle" font-family="Overpass,sans-serif" font-weight="800" font-size="' + (b.t.length > 2 ? 6.6 : 7.6) + '" letter-spacing=".3" fill="#2b1d14">TIL ' + esc(b.t + ' ' + b.ap) + '</text>' +
+      '</svg>';
+  }
+
   function rowHTML(s) {
-    var a = hm(s.s), b = hm(s.e);
     return '<div class="show">' +
       '<div class="date">' + esc(wd(s.s)) + ' · ' + esc(md(s.s)) + '</div>' +
       '<div class="where"><div class="v">' + esc(label(s)) + (s.tag ? ' <span class="tagchip">' + esc(s.tag) + '</span>' : '') + '</div>' +
       '<div class="c">' + esc(s.addr) + (s.area && s.addr.indexOf(s.area) < 0 ? ' · ' + esc(s.area) : '') + '</div>' +
       (s.note ? '<div class="c note">' + esc(s.note) + '</div>' : '') +
       (window.CFB.actionsHTML ? window.CFB.actionsHTML(s) : '') + '</div>' +
-      '<div class="limit" aria-label="' + esc(timeRange(s)) + '"><span class="mx">Maximum</span><span class="n">' + esc(b.t) + '</span><span class="u">' + esc(b.ap) + '</span><span class="fr">From ' + esc(a.t + ' ' + a.ap) + '</span></div>' +
+      routeHTML(s) +
       '</div>';
   }
 

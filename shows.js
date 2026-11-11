@@ -87,6 +87,46 @@ window.CFB_SHOWS = [
     poster: "assets/tuesday-poster-full.jpg"
   },
   {
+    title: "House of Musical Redemption",
+    venue: "ANAF",
+    addr: "765 Third St, Mississauga, ON",
+    area: "Mississauga",
+    start: "2026-12-06T13:00:00-05:00",
+    end: "2026-12-06T16:00:00-05:00",
+    tag: "Jam",
+    note: "First Sunday of the month · all jammers welcome"
+  },
+  {
+    title: "House of Musical Redemption",
+    venue: "ANAF",
+    addr: "765 Third St, Mississauga, ON",
+    area: "Mississauga",
+    start: "2027-01-03T13:00:00-05:00",
+    end: "2027-01-03T16:00:00-05:00",
+    tag: "Jam",
+    note: "First Sunday of the month · all jammers welcome"
+  },
+  {
+    title: "House of Musical Redemption",
+    venue: "ANAF",
+    addr: "765 Third St, Mississauga, ON",
+    area: "Mississauga",
+    start: "2027-02-07T13:00:00-05:00",
+    end: "2027-02-07T16:00:00-05:00",
+    tag: "Jam",
+    note: "First Sunday of the month · all jammers welcome"
+  },
+  {
+    title: "House of Musical Redemption",
+    venue: "ANAF",
+    addr: "765 Third St, Mississauga, ON",
+    area: "Mississauga",
+    start: "2027-03-07T13:00:00-05:00",
+    end: "2027-03-07T16:00:00-05:00",
+    tag: "Jam",
+    note: "First Sunday of the month · all jammers welcome"
+  },
+  {
     title: "The Ivy Bridge",
     venue: "The Ivy Bridge",
     addr: "160 Main St, Brampton, ON",
