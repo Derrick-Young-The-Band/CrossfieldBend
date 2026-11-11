@@ -30,6 +30,14 @@
 */
 window.CFB_SHOWS = [
   {
+    title: "Port Credit Legion",
+    venue: "Port Credit Legion",
+    addr: "35 Front St N, Mississauga, ON",
+    area: "Port Credit",
+    start: "2026-11-13T17:30:00-05:00",
+    end: "2026-11-13T20:30:00-05:00"
+  },
+  {
     title: "Tuesday Night Music Club",
     venue: "Roc'n Doc's",
     addr: "105 Lakeshore Rd E, Mississauga, ON",
