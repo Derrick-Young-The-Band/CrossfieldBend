@@ -35,7 +35,8 @@ window.CFB_SHOWS = [
     addr: "35 Front St N, Mississauga, ON",
     area: "Port Credit",
     start: "2026-11-13T17:30:00-05:00",
-    end: "2026-11-13T20:30:00-05:00"
+    end: "2026-11-13T20:30:00-05:00",
+    tag: "With Ray Walsh on keys"
   },
   {
     title: "Tuesday Night Music Club",
