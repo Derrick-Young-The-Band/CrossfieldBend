@@ -36,6 +36,7 @@ window.CFB_SHOWS = [
     area: "Port Credit",
     start: "2026-11-13T17:30:00-05:00",
     end: "2026-11-13T20:30:00-05:00",
+    poster: "assets/legion-poster.jpg",
     tag: "With Ray Walsh on keys"
   },
   {
