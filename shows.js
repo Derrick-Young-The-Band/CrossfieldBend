@@ -17,7 +17,8 @@
     addr    Street, city, province, e.g. "105 Lakeshore Rd E, Mississauga, ON".
     area    The neighbourhood people know it by, e.g. "Port Credit".
     start   When it starts: "YYYY-MM-DDTHH:MM:00-05:00".
-    end     When it ends, same format.
+    end     When it ends, same format. Leave this line out if there is no set end;
+            the sign then shows only the start time.
             Use -05:00 from early November to mid March (winter time)
             and -04:00 from mid March to early November (summer time).
             11 PM on Dec 1 2026 is "2026-12-01T23:00:00-05:00".
@@ -40,6 +41,15 @@ window.CFB_SHOWS = [
     tag: "With Ray Walsh on keys",
     note: "Roast beef dinner 5–7",
     poster: "assets/legion-2026-11-13.jpg"
+  },
+  {
+    title: "Birthday night",
+    venue: "McLaughlin's Pub",
+    addr: "136 Lakeshore Rd E, Mississauga, ON",
+    area: "Port Credit",
+    start: "2026-11-21T19:00:00-05:00",
+    tag: "Full band",
+    note: "With Mimico Bill and the brothers McConnell · the old Donegal Arms"
   },
   {
     title: "Tuesday Night Music Club",

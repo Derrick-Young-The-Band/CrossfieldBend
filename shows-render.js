@@ -6,7 +6,9 @@
   function all() {
     return (window.CFB_SHOWS || []).map(function (s) {
       var o = {}; for (var k in s) o[k] = s[k];
-      o.s = new Date(s.start); o.e = new Date(s.end);
+      o.s = new Date(s.start);
+      o.noEnd = !s.end;  /* no set end time: keep it listed for 4 hours after the start */
+      o.e = s.end ? new Date(s.end) : new Date(o.s.getTime() + 4 * 3600 * 1000);
       return o;
     }).filter(function (s) { return !isNaN(s.s) && !isNaN(s.e); });
   }
@@ -27,6 +29,7 @@
   }
   function timeRange(s) {
     var a = hm(s.s), b = hm(s.e);
+    if (s.noEnd) return a.t + ' ' + a.ap;
     return a.ap === b.ap ? a.t + '–' + b.t + ' ' + b.ap : a.t + ' ' + a.ap + '–' + b.t + ' ' + b.ap;
   }
   function street(s) { return s.addr.split(',')[0].trim(); }
@@ -37,15 +40,15 @@
   /* US-highway style route shield: start time big, end time small */
   function routeHTML(s) {
     var a = hm(s.s), b = hm(s.e), big = a.t, size = big.length > 2 ? 27 : 40;
-    return '<svg class="route" viewBox="0 0 100 112" role="img" aria-label="Starts ' + esc(a.t + ' ' + a.ap) + ', ends ' + esc(b.t + ' ' + b.ap) + '">' +
+    return '<svg class="route" viewBox="0 0 100 112" role="img" aria-label="Starts ' + esc(a.t + ' ' + a.ap) + (s.noEnd ? '' : ', ends ' + esc(b.t + ' ' + b.ap)) + '">' +
       '<path d="M6 4 H94 C93 12 95 18 98 22 C98 64 80 90 50 108 C20 90 2 64 2 22 C5 18 7 12 6 4 Z" fill="#fcf5e3" stroke="#2b1d14" stroke-width="4" stroke-linejoin="round"/>' +
       '<path d="M12 10 H88 C87.6 15 88.6 19 91 23 C91 61 75 84 50 99 C25 84 9 61 9 23 C11.4 19 12.4 15 12 10 Z" fill="none" stroke="#2b1d14" stroke-width="1.6"/>' +
       '<path d="M12 10 H88 C87.6 15 88.6 19 91 23 H9 C11.4 19 12.4 15 12 10 Z" fill="#2b1d14"/>' +
       '<text x="50" y="19.6" text-anchor="middle" font-family="Overpass,sans-serif" font-weight="900" font-size="9" letter-spacing="1.6" fill="#fcf5e3">STARTS</text>' +
       '<text x="50" y="' + (size > 30 ? 54 : 50) + '" text-anchor="middle" font-family="Overpass,sans-serif" font-weight="900" font-size="' + size + '" fill="#2b1d14">' + esc(big) + '</text>' +
       '<text x="50" y="64" text-anchor="middle" font-family="Overpass,sans-serif" font-weight="900" font-size="10" letter-spacing="1" fill="#2b1d14">' + esc(a.ap) + '</text>' +
-      '<path d="M26 69 H74" stroke="#2b1d14" stroke-width="1.6"/>' +
-      '<text x="50" y="79" text-anchor="middle" font-family="Overpass,sans-serif" font-weight="800" font-size="' + (b.t.length > 2 ? 6.6 : 7.6) + '" letter-spacing=".3" fill="#2b1d14">TIL ' + esc(b.t + ' ' + b.ap) + '</text>' +
+      (s.noEnd ? '' : '<path d="M26 69 H74" stroke="#2b1d14" stroke-width="1.6"/>' +
+      '<text x="50" y="79" text-anchor="middle" font-family="Overpass,sans-serif" font-weight="800" font-size="' + (b.t.length > 2 ? 6.6 : 7.6) + '" letter-spacing=".3" fill="#2b1d14">TIL ' + esc(b.t + ' ' + b.ap) + '</text>') +
       '</svg>';
   }
 
@@ -65,7 +68,7 @@
       var bits = s.addr.split(',').map(function (x) { return x.trim(); });
       var ev = {
         '@context': 'https://schema.org', '@type': 'MusicEvent', name: eventName(s),
-        startDate: s.start, endDate: s.end,
+        startDate: s.start,
         eventStatus: 'https://schema.org/EventScheduled',
         eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
         location: { '@type': 'Place', name: s.venue, address: { '@type': 'PostalAddress', streetAddress: bits[0], addressLocality: bits[1] || '', addressRegion: bits[2] || 'ON', addressCountry: 'CA' } },
@@ -73,6 +76,7 @@
         url: SITE + '/#shows',
         description: 'Crossfield Bend live at ' + s.venue + ', ' + s.area + '.'
       };
+      if (s.end) ev.endDate = s.end;
       if (s.poster) ev.image = SITE + '/' + s.poster;
       return ev;
     });
