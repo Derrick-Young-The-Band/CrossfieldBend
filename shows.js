@@ -49,7 +49,7 @@ window.CFB_SHOWS = [
     area: "Port Credit",
     start: "2026-11-21T19:00:00-05:00",
     tag: "Full band",
-    note: "With Mimico Bill and the brothers McConnell · the old Donegal Arms",
+    note: "With Mimico Bill and the brothers McConnell · formerly The Donegal Arms",
     poster: "assets/mclaughlins-2026-11-21.jpg"
   },
   {
