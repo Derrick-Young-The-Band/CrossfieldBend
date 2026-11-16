@@ -54,6 +54,7 @@
 
   function rowHTML(s) {
     return '<div class="show">' +
+      (s.poster ? '<a class="thumb" href="' + esc(s.poster) + '" target="_blank" rel="noopener" aria-label="Poster: ' + esc(label(s)) + '"><img src="' + esc(s.poster) + '" width="1080" height="1350" loading="lazy" alt=""></a>' : '') +
       '<div class="date">' + esc(wd(s.s)) + ' · ' + esc(md(s.s)) + '</div>' +
       '<div class="where"><div class="v">' + esc(label(s)) + (s.tag ? ' <span class="tagchip">' + esc(s.tag) + '</span>' : '') + '</div>' +
       '<div class="c">' + esc(s.addr) + (s.area && s.addr.indexOf(s.area) < 0 ? ' · ' + esc(s.area) : '') + '</div>' +

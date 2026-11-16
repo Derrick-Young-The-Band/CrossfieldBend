@@ -32,18 +32,7 @@
 */
 window.CFB_SHOWS = [
   {
-    title: "Port Credit Legion",
-    venue: "Port Credit Legion",
-    addr: "35 Front St N, Mississauga, ON",
-    area: "Port Credit",
-    start: "2026-11-13T17:30:00-05:00",
-    end: "2026-11-13T20:30:00-05:00",
-    tag: "With Ray Walsh on keys",
-    note: "Roast beef dinner 5–7",
-    poster: "assets/legion-2026-11-13.jpg"
-  },
-  {
-    title: "Birthday night",
+    title: "Maurie's Movember Bender",
     venue: "McLaughlin's Pub",
     addr: "136 Lakeshore Rd E, Mississauga, ON",
     area: "Port Credit",
@@ -57,45 +46,9 @@ window.CFB_SHOWS = [
     venue: "Roc'n Doc's",
     addr: "105 Lakeshore Rd E, Mississauga, ON",
     area: "Port Credit",
-    start: "2026-12-01T19:00:00-05:00",
+    start: "2026-12-01T19:30:00-05:00",
     end: "2026-12-01T23:00:00-05:00",
-    poster: "assets/tuesday-poster-full.jpg"
-  },
-  {
-    title: "Tuesday Night Music Club",
-    venue: "Roc'n Doc's",
-    addr: "105 Lakeshore Rd E, Mississauga, ON",
-    area: "Port Credit",
-    start: "2026-12-15T19:00:00-05:00",
-    end: "2026-12-15T23:00:00-05:00",
-    poster: "assets/tuesday-poster-full.jpg"
-  },
-  {
-    title: "Tuesday Night Music Club",
-    venue: "Roc'n Doc's",
-    addr: "105 Lakeshore Rd E, Mississauga, ON",
-    area: "Port Credit",
-    start: "2026-12-29T19:00:00-05:00",
-    end: "2026-12-29T23:00:00-05:00",
-    poster: "assets/tuesday-poster-full.jpg"
-  },
-  {
-    title: "Tuesday Night Music Club",
-    venue: "Roc'n Doc's",
-    addr: "105 Lakeshore Rd E, Mississauga, ON",
-    area: "Port Credit",
-    start: "2027-01-12T19:00:00-05:00",
-    end: "2027-01-12T23:00:00-05:00",
-    poster: "assets/tuesday-poster-full.jpg"
-  },
-  {
-    title: "Tuesday Night Music Club",
-    venue: "Roc'n Doc's",
-    addr: "105 Lakeshore Rd E, Mississauga, ON",
-    area: "Port Credit",
-    start: "2027-01-26T19:00:00-05:00",
-    end: "2027-01-26T23:00:00-05:00",
-    poster: "assets/tuesday-poster-full.jpg"
+    poster: "assets/poster-tnmc.jpg"
   },
   {
     title: "House of Musical Redemption",
@@ -105,7 +58,81 @@ window.CFB_SHOWS = [
     start: "2026-12-06T13:00:00-05:00",
     end: "2026-12-06T16:00:00-05:00",
     tag: "Jam",
-    note: "First Sunday of the month · all jammers welcome"
+    note: "First Sunday of the month · all jammers welcome",
+    poster: "assets/poster-anaf.jpg"
+  },
+  {
+    title: "Alexander Quail's Bad Santa",
+    venue: "McLaughlin's Pub",
+    addr: "136 Lakeshore Rd E, Mississauga, ON",
+    area: "Port Credit",
+    start: "2026-12-10T20:00:00-05:00",
+    tag: "Special guest appearance",
+    note: "Formerly The Donegal Arms",
+    poster: "assets/poster-2026-12-10.jpg"
+  },
+  {
+    title: "Festival of Trees",
+    venue: "Small Arms Inspection Building",
+    addr: "1352 Lakeshore Rd E, Mississauga, ON",
+    area: "Lakeview",
+    start: "2026-12-12T12:30:00-05:00",
+    end: "2026-12-12T16:30:00-05:00",
+    poster: "assets/poster-2026-12-12.jpg"
+  },
+  {
+    title: "Tuesday Night Music Club",
+    venue: "Roc'n Doc's",
+    addr: "105 Lakeshore Rd E, Mississauga, ON",
+    area: "Port Credit",
+    start: "2026-12-15T19:30:00-05:00",
+    end: "2026-12-15T23:00:00-05:00",
+    poster: "assets/poster-tnmc.jpg"
+  },
+  {
+    title: "Dave Woods' Christmas Show",
+    venue: "The Moonshine Cafe",
+    addr: "568 Kerr St, Oakville, ON",
+    area: "Oakville",
+    start: "2026-12-16T20:00:00-05:00",
+    poster: "assets/poster-2026-12-16.jpg"
+  },
+  {
+    title: "Port Credit Legion",
+    venue: "Port Credit Legion",
+    addr: "35 Front St N, Mississauga, ON",
+    area: "Port Credit",
+    start: "2026-12-18T17:30:00-05:00",
+    end: "2026-12-18T20:30:00-05:00",
+    note: "Fish and chips",
+    poster: "assets/poster-2026-12-18.jpg"
+  },
+  {
+    title: "Boxing Day Bender",
+    venue: "McLaughlin's Pub",
+    addr: "136 Lakeshore Rd E, Mississauga, ON",
+    area: "Port Credit",
+    start: "2026-12-26T14:00:00-05:00",
+    note: "Formerly The Donegal Arms",
+    poster: "assets/poster-2026-12-26.jpg"
+  },
+  {
+    title: "Tuesday Night Music Club",
+    venue: "Roc'n Doc's",
+    addr: "105 Lakeshore Rd E, Mississauga, ON",
+    area: "Port Credit",
+    start: "2026-12-29T19:30:00-05:00",
+    end: "2026-12-29T23:00:00-05:00",
+    poster: "assets/poster-tnmc.jpg"
+  },
+  {
+    title: "Polar Bear Dip",
+    venue: "McLaughlin's Pub",
+    addr: "136 Lakeshore Rd E, Mississauga, ON",
+    area: "Port Credit",
+    start: "2027-01-01T13:00:00-05:00",
+    note: "Formerly The Donegal Arms",
+    poster: "assets/poster-2027-01-01.jpg"
   },
   {
     title: "House of Musical Redemption",
@@ -115,7 +142,26 @@ window.CFB_SHOWS = [
     start: "2027-01-03T13:00:00-05:00",
     end: "2027-01-03T16:00:00-05:00",
     tag: "Jam",
-    note: "First Sunday of the month · all jammers welcome"
+    note: "First Sunday of the month · all jammers welcome",
+    poster: "assets/poster-anaf.jpg"
+  },
+  {
+    title: "Tuesday Night Music Club",
+    venue: "Roc'n Doc's",
+    addr: "105 Lakeshore Rd E, Mississauga, ON",
+    area: "Port Credit",
+    start: "2027-01-12T19:30:00-05:00",
+    end: "2027-01-12T23:00:00-05:00",
+    poster: "assets/poster-tnmc.jpg"
+  },
+  {
+    title: "Tuesday Night Music Club",
+    venue: "Roc'n Doc's",
+    addr: "105 Lakeshore Rd E, Mississauga, ON",
+    area: "Port Credit",
+    start: "2027-01-26T19:30:00-05:00",
+    end: "2027-01-26T23:00:00-05:00",
+    poster: "assets/poster-tnmc.jpg"
   },
   {
     title: "House of Musical Redemption",
@@ -125,7 +171,8 @@ window.CFB_SHOWS = [
     start: "2027-02-07T13:00:00-05:00",
     end: "2027-02-07T16:00:00-05:00",
     tag: "Jam",
-    note: "First Sunday of the month · all jammers welcome"
+    note: "First Sunday of the month · all jammers welcome",
+    poster: "assets/poster-anaf.jpg"
   },
   {
     title: "House of Musical Redemption",
@@ -135,7 +182,27 @@ window.CFB_SHOWS = [
     start: "2027-03-07T13:00:00-05:00",
     end: "2027-03-07T16:00:00-05:00",
     tag: "Jam",
-    note: "First Sunday of the month · all jammers welcome"
+    note: "First Sunday of the month · all jammers welcome",
+    poster: "assets/poster-anaf.jpg"
+  },
+  {
+    title: "Port Credit Legion",
+    venue: "Port Credit Legion",
+    addr: "35 Front St N, Mississauga, ON",
+    area: "Port Credit",
+    start: "2026-11-13T17:30:00-05:00",
+    end: "2026-11-13T20:30:00-05:00",
+    tag: "With Ray Walsh on keys",
+    note: "Roast beef dinner 5–7",
+    poster: "assets/legion-2026-11-13.jpg"
+  },
+  {
+    title: "House of Musical Redemption",
+    venue: "ANAF",
+    addr: "765 Third St, Mississauga, ON",
+    area: "Mississauga",
+    start: "2026-11-08T13:00:00-05:00",
+    end: "2026-11-08T16:00:00-05:00"
   },
   {
     title: "The Ivy Bridge",
@@ -145,13 +212,5 @@ window.CFB_SHOWS = [
     start: "2026-11-07T19:00:00-05:00",
     end: "2026-11-07T23:00:00-05:00",
     poster: "assets/poster.jpg"
-  },
-  {
-    title: "House of Musical Redemption",
-    venue: "ANAF",
-    addr: "765 Third St, Mississauga, ON",
-    area: "Mississauga",
-    start: "2026-11-08T13:00:00-05:00",
-    end: "2026-11-08T16:00:00-05:00"
   }
 ];

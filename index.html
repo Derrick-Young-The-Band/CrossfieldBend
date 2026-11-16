@@ -125,6 +125,10 @@
   .show .where{flex:1;min-width:200px}
   .show .where .v{font-family:'Alfa Slab One',Georgia,serif;font-weight:700;font-size:20px}
   .show .where .c{color:var(--muted);font-size:15px}
+  .thumb{flex:0 0 auto;display:block;width:72px;border:var(--edge);border-radius:8px;overflow:hidden;box-shadow:3px 3px 0 var(--ink);transform:rotate(-2deg);transition:transform .15s}
+  .thumb:hover{transform:rotate(0) scale(1.06)}
+  .thumb img{width:100%;height:auto;display:block}
+  @media(max-width:760px){.show{display:grid;grid-template-columns:72px 1fr auto;column-gap:14px;align-items:start}.show .thumb{grid-row:1 / span 2}.show .date{grid-column:2}.show .where{grid-column:2}.show .route{grid-column:3;grid-row:1 / span 2;width:64px}}
   .route{width:78px;height:auto;flex:0 0 auto;filter:drop-shadow(3px 3px 0 var(--ink))}
 
   /* Band + players */
