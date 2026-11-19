@@ -161,7 +161,9 @@ window.CFB_SHOWS = [
     area: "Port Credit",
     start: "2027-01-15T17:30:00-05:00",
     end: "2027-01-15T20:30:00-05:00",
-    tag: "Every 3 weeks"
+    tag: "Every 3 weeks",
+    note: "Special guest Mimico Bill",
+    poster: "assets/poster-legion-fridays.jpg"
   },
   {
     title: "Port Credit Legion",
@@ -170,7 +172,9 @@ window.CFB_SHOWS = [
     area: "Port Credit",
     start: "2027-02-05T17:30:00-05:00",
     end: "2027-02-05T20:30:00-05:00",
-    tag: "Every 3 weeks"
+    tag: "Every 3 weeks",
+    note: "Special guest Mimico Bill",
+    poster: "assets/poster-legion-fridays.jpg"
   },
   {
     title: "Port Credit Legion",
@@ -179,7 +183,9 @@ window.CFB_SHOWS = [
     area: "Port Credit",
     start: "2027-02-26T17:30:00-05:00",
     end: "2027-02-26T20:30:00-05:00",
-    tag: "Every 3 weeks"
+    tag: "Every 3 weeks",
+    note: "Special guest Mimico Bill",
+    poster: "assets/poster-legion-fridays.jpg"
   },
   {
     title: "Port Credit Legion",
@@ -188,7 +194,9 @@ window.CFB_SHOWS = [
     area: "Port Credit",
     start: "2027-03-19T17:30:00-04:00",
     end: "2027-03-19T20:30:00-04:00",
-    tag: "Every 3 weeks"
+    tag: "Every 3 weeks",
+    note: "Special guest Mimico Bill",
+    poster: "assets/poster-legion-fridays.jpg"
   },
   {
     title: "Tuesday Night Music Club",
